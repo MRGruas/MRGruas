@@ -15,3 +15,17 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      
+      - name: Packer GitHub Actions
+  # You may pin to the exact commit or the version.
+  # uses: hashicorp/packer-github-actions@2ef5cf325f2beace99a1742903eb52542765c08f
+  uses: hashicorp/packer-github-actions@v0.2.0
+  with:
+    # command to execute
+    command: 
+    # arguments for command
+    arguments: # optional
+    # file(s) to target
+    target: # default is artifacts.pkr.json
+      
+   

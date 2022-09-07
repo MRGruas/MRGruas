@@ -1,4 +1,4 @@
-name: Test a Docker image with Snyk
+name: snyk.sarif
 
 on:
   push:

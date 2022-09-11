@@ -1,0 +1,27 @@
+{
+  "background_color": "#ffffff",
+  "description": "Servicios de grúa en Autopista Monterrey - Nuevo Laredo las 24/7",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "M.R. Grúas",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "M.R. Grúas",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "img/favicons/favicon.ico"
+    },
+    {
+      "src": "images/180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "images/1600x900.jpeg",
+      "type": "image/jpeg",
+      "sizes": "1600x900"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="manifest" href="manifest.json" />
   <meta charset="utf-8">
   <title> | Gruas de plataforma | M.R. Grúas | +52 8110775852 | Servicios de Asistencia Vial</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -1078,6 +1079,10 @@
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
-
+<script type="module">
+   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+   const el = document.createElement('pwa-update');
+   document.body.appendChild(el);
+</script>
 </body>
 </html>

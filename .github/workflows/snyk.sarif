@@ -41,3 +41,9 @@ jobs:
       uses: github/codeql-action/upload-sarif@v1
       with:
         sarif_file: snyk.sarif
+        
+           at getSarifFilePaths (/home/runner/work/_actions/github/codeql-action/v2/lib/upload-lib.js:151:15)
+    at Object.uploadFromActions (/home/runner/work/_actions/github/codeql-action/v2/lib/upload-lib.js:139:30)
+    at run (/home/runner/work/_actions/github/codeql-action/v2/lib/upload-sarif-action.js:53:47)
+    at async runWrapper (/home/runner/work/_actions/github/codeql-action/v2/lib/upload-sarif-action.js:75:9)
+

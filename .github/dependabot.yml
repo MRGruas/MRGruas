@@ -50,5 +50,5 @@ updates:
   uses: Somfic/cleanupcode-action@1.1.1
 
 - name: Upload a Build Artifact
-  uses: actions/upload-artifact@v3.1.0
+  uses: actions/upload-artifact@v3.1.0 
 

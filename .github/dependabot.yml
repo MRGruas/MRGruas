@@ -6,7 +6,7 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions" # See documentation for possible values
-    directory: "MRGruas.github.io/.github/" # Location of package manifests
+    directory: ".github/dependabot.yml" # Location of package manifests
     schedule:
       interval: "weekly"
 .

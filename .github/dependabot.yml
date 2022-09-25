@@ -9,5 +9,4 @@ updates:
     directory: ".github/dependabot.yml" # Location of package manifests
     schedule:
       interval: "weekly"
-.
-.
+

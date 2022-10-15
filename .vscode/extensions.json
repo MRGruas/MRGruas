@@ -1,6 +1,8 @@
 {
     "recommendations": [
         "ritwickdey.liveserver",
-        "svipas.prettier-plus"
+        "svipas.prettier-plus",
+        "ms-python.vscode-pylance",
+        "christian-kohler.npm-intellisense"
     ]
 }

@@ -7,12 +7,16 @@
         "fabiospampinato.vscode-optimize-images",
         "yylzhixian.image2webp",
         "jeff-hykin.better-cpp-syntax",
-        "ritwickdey.LiveServer",
         "ron0115.image-snippets",
-        "GitHub.vscode-pull-request-github",
+        "github.vscode-pull-request-github",
         "kisstkondoros.vscode-gutter-preview",
-        "GitHub.codespaces",
-        "GitHub.remotehub","ms-vscode.remote-repositories","MS-CEINTL.vscode-language-pack-es","ms-vscode-remote.remote-wsl-recommender","ms-vscode.vscode-js-profile-table",
-        
+        "github.codespaces",
+        "github.remotehub",
+        "ms-vscode.remote-repositories",
+        "ms-ceintl.vscode-language-pack-es",
+        "ms-vscode-remote.remote-wsl-recommender",
+        "ms-vscode.vscode-js-profile-table",
+        "s2junn.image-essentials",
+        "lukapetrovic.image-resizer"
     ]
 }

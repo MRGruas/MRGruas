@@ -23,7 +23,7 @@
         },
         {
             "name": "PowerShell Launch Script",
-            "type": "PowerShell",
+            "type": "pwa-chrome",
             "request": "launch",
             "script": "enter path or command to execute e.g.: ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
             "cwd": "${workspaceFolder}"

@@ -4,6 +4,7 @@
         "build": "babel src -d lib",
         "test": "jest"
 
-    }
+    },
+    "cSpell.language": "es,en,es-ES"
     
 }

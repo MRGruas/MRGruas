@@ -17,6 +17,7 @@
         "ms-vscode-remote.remote-wsl-recommender",
         "ms-vscode.vscode-js-profile-table",
         "s2junn.image-essentials",
-        "lukapetrovic.image-resizer"
+        "lukapetrovic.image-resizer",
+        "MelvinGuerrero.latino-vscode"
     ]
 }

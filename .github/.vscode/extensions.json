@@ -1,3 +1,4 @@
+<<<<<<< HEAD:.github/.vscode/extensions.json
 {
     "recommendations": [
         "ritwickdey.liveserver",
@@ -20,4 +21,39 @@
         "lukapetrovic.image-resizer",
         "MelvinGuerrero.latino-vscode"
     ]
+=======
+{
+    "recommendations": [
+        "ritwickdey.liveserver",
+        "svipas.prettier-plus",
+        "ms-python.vscode-pylance",
+        "christian-kohler.npm-intellisense",
+        "fabiospampinato.vscode-optimize-images",
+        "yylzhixian.image2webp",
+        "jeff-hykin.better-cpp-syntax",
+        "ron0115.image-snippets",
+        "github.vscode-pull-request-github",
+        "kisstkondoros.vscode-gutter-preview",
+        "github.codespaces",
+        "github.remotehub",
+        "ms-vscode.remote-repositories",
+        "ms-ceintl.vscode-language-pack-es",
+        "ms-vscode-remote.remote-wsl-recommender",
+        "ms-vscode.vscode-js-profile-table",
+        "s2junn.image-essentials",
+        "lukapetrovic.image-resizer",
+        "MelvinGuerrero.latino-vscode",
+        "DiegoMolina.css-minify",
+        "aaron-bond.better-comments",
+        "bysabi.prettier-vscode-semistandard",
+        "c0der-himel.vscode-wev-dev-extension-pack","cschlosser.doxdocgen","developer2006.svg-gallery","dsznajder.es7-react-js-snippets","FEZIRO.image-to-base64",
+        "formulahendry.auto-rename-tag",
+        "GitHub.codespaces",
+        "GitHub.remotehub",
+        "GitHub.vscode-pull-request-github",
+        "gurayyarar.imagesprites","me-dutour-mathieu.vscode-github-actions","MS-CEINTL.vscode-language-pack-es",
+        "naumovs.color-highlight","peakchen90.open-html-in-browser","redhat.vscode-yaml","shardulm94.trailing-spaces","sporiley.css-auto-prefix","Tobermory.es6-string-html","VisualStudioExptTeam.intellicode-api-usage-examples","VisualStudioExptTeam.vscodeintellicode","voldemortensen.rainbow-tags","wayou.vscode-todo-highlight","weijialiu.tinypng","xabikos.JavaScriptSnippets","ZainChen.json","zardoy.fix-all-json","zitup.classnametocss", "vscode.csharp"
+
+    ]
+>>>>>>> dee7198e410587960992967d8df1c31ddf6fa2c1:.vscode/extensions.json
 }

@@ -1,5 +1,5 @@
 # robots.txt
 User-agent: *
 Disallow: 
-Disallow: /cgi-bin/
+Disallow: 
 Sitemap: https://mrgruas.github.io/

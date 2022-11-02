@@ -1,6 +1,8 @@
 {
     "recommendations": [
-        "yylzhixian.image2webp"
-        , "ron0115.image-snippets","svipas.prettier-plus"
+        "yylzhixian.image2webp",
+        "ron0115.image-snippets",
+        "svipas.prettier-plus",
+        "ritwickdey.LiveServer"
     ]
 }

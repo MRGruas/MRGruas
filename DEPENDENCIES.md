@@ -488,6 +488,7 @@ graph LR;
   npm-->init-package-json;
   npm-->is-cidr;
   npm-->isaacs-string-locale-compare["@isaacs/string-locale-compare"];
+  npm-->jquery;
   npm-->json-parse-even-better-errors;
   npm-->libnpmaccess;
   npm-->libnpmdiff;

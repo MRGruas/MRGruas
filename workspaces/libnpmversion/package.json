@@ -9,7 +9,7 @@
   "description": "library to do the things that 'npm version' does",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/cli.git",
+    "url": "https://github.com/MRGruas/MRGruas.github.io.git",
     "directory": "workspaces/libnpmversion"
   },
   "author": "GitHub Inc.",
@@ -48,7 +48,7 @@
   },
   "templateOSS": {
     "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
-    "version": "4.9.0",
+    "version": "4.10.0",
     "content": "../../scripts/template-oss/index.js"
   }
 }

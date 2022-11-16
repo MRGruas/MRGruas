@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/cli.git",
+    "url": "https://github.com/MRGruas/MRGruas.github.io.git",
     "directory": "workspaces/libnpmaccess"
   },
   "bugs": "https://github.com/npm/libnpmaccess/issues",
@@ -40,7 +40,7 @@
   ],
   "templateOSS": {
     "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
-    "version": "4.9.0",
+    "version": "4.10.0",
     "content": "../../scripts/template-oss/index.js"
   },
   "tap": {

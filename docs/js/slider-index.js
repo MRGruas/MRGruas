@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $("#js-main-slider")
+$(document).ready(function () {
+  $('#js-main-slider')
     .pogoSlider({
       autoplay: true,
       autoplayTimeout: 10000,
@@ -7,13 +7,13 @@ $(document).ready(function() {
       preserveTargetSize: true,
       targetWidth: 1000,
       targetHeight: 300,
-      responsive: true
+      responsive: true,
     })
-    .data("plugin_pogoSlider");
+    .data('plugin_pogoSlider')
 
   var transitionDemoOpts = {
     displayProgess: false,
     generateNav: false,
-    generateButtons: false
-  };
-});
+    generateButtons: false,
+  }
+})

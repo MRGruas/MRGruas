@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "recommendations": [
     
     "yylzhixian.image2webp",
@@ -84,4 +85,13 @@
     "zardoy.fix-all-json",
     "loiane.ts-extension-pack",
   ]
+=======
+    "recommendations": [
+        "yylzhixian.image2webp",
+        "ron0115.image-snippets",
+        "svipas.prettier-plus",
+        "ritwickdey.liveserver",
+        "abusaidm.html-snippets"
+    ]
+>>>>>>> 541912d66c17c935f65a7408f6703661f2705887
 }

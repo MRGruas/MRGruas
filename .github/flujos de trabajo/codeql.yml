@@ -72,6 +72,3 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
-
-- name: HTML5 Validator
-  uses: Cyb3r-Jak3/html5validator-action@v7.2.0

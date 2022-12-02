@@ -52,5 +52,6 @@
         "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "sml": "cd $dir && sml $fileName"
     },
-    "C_Cpp.intelliSenseEngineFallback": "Enabled"
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "livePreview.defaultPreviewPath": "c:\\Users\\israe\\Documents\\mrgruas\\index.html"
 }

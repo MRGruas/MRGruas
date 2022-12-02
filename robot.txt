@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 # robots.txt
 User-agent: *
 Disallow: 
 Disallow: 
 Sitemap: https://mrgruas.github.io/
+=======
+# robots.txt
+User-agent: *
+Disallow: 
+Disallow: 
+Sitemap: https://mrgruas.github.io/
+>>>>>>> 4d5b71c82faca82d5652bad17d4e0442faffd04f

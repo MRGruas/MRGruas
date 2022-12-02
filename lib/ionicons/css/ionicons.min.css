@@ -1,0 +1,38 @@
+@charset "UTF-8"; /*!
+  Ionicons, v2.0.0
+  Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
+  https://twitter.com/benjsperry  https://twitter.com/ionicframework
+  MIT License: https://github.com/driftyco/ionicons
+
+  Android-style icons originally built by Google’s
+  Material Design Icons: https://github.com/google/material-design-icons
+  used under CC BY http://creativecommons.org/licenses/by/4.0/
+  Modified icons to fit ionicon’s grid from original.
+*/
+@font-face {
+  font-family: Ionicons;
+  src: url(https://mrgruas.github.io/lib/ionicons/fonts/ionicons.eot?v=2.0.0);
+  src: url(https://mrgruas.github.io/lib/ionicons/fonts/ionicons.eot?v=2.0.0#iefix)
+      format("embedded-opentype"),
+    url(https://mrgruas.github.io/lib/ionicons/fonts/ionicons.ttf?v=2.0.0)
+      format("truetype"),
+    url(https://mrgruas.github.io/lib/ionicons/fonts/ionicons.woff?v=2.0.0)
+      format("woff"),
+    url(https://mrgruas.github.io/lib/ionicons/fonts/ionicons.svg?v=2.0.0#Ionicons)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.ionicons {
+  display: inline-block;
+  font-family: Ionicons;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

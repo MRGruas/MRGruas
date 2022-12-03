@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Security Policy
 
 ## Supported Versions

@@ -5,7 +5,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "MRGruas/MRGruas.github.io/tree/ghanmx-patch-1/.github" # See documentation for possible values
+The property '#/updates/0/package-ecosystem' value "MRGruas/MRGruas.github.io/tree/ghanmx-patch-1/.github" did not match one of the following values: npm, bundler, composer, maven, mix, cargo, gradle, nuget, gomod, docker, elm, gitsubmodule, github-actions, pip, terraform, pub
+  - package-ecosystem: "" # See documentation for possible values
     directory: "MRGruas/MRGruas.github.io/tree/ghanmx-patch-1/.github" # Location of package manifests
     schedule:
       interval: "weekly"

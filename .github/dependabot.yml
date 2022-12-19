@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  - package-ecosystem: "MRGruas.github.io/.github/" # See documentation for possible values
-    directory: "MRGruas.github.io/.github/" # Location of package manifests
+  - package-ecosystem: "MRGruas/MRGruas.github.io/tree/ghanmx-patch-1/.github" # See documentation for possible values
+    directory: "MRGruas/MRGruas.github.io/tree/ghanmx-patch-1/.github" # Location of package manifests
     schedule:
       interval: "weekly"

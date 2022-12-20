@@ -1,9 +1,11 @@
 {
-    "recommendations": {
+
     "recommendations": ["GitHub.vscode-codeql", "abusaidm.html-snippets","bianxianyang.htmlplay","codeandstuff.package-json-upgrade","csstools.postcss","DavidAnson.vscode-markdownlint","DevEscalus.svg-sprites-viewer","hashrock.vscode-sprite-editor","hbenl.vscode-test-explorer","mrmlnc.vscode-autoprefixer","ms-azuretools.vscode-azureappservice","ms-azuretools.vscode-azureresourcegroups","ms-python.isort","ms-python.python","ms-toolsai.jupyter","ms-toolsai.jupyter-keymap","ms-toolsai.jupyter-renderers","ms-toolsai.vscode-jupyter-cell-tags",
 
-    ,"ms-toolsai.vscode-jupyter-slideshow","ms-vscode.azure-account","ms-vscode.test-adapter-converter","muhammadsayuti.csp-refactoring","oliversturm.fix-json","sygene.auto-correct","WASTeamAccount.WebTemplateStudio-dev-nightly",
-        "ritwickdey.liveserver",
+    "ms-toolsai.vscode-jupyter-slideshow","ms-vscode.azure-account","ms-vscode.test-adapter-converter","muhammadsayuti.csp-refactoring","oliversturm.fix-json","sygene.auto-correct","WASTeamAccount.WebTemplateStudio-dev-nightly",
+        "ritwickdey.liveserver","codespaces-contrib.codeswing","GregorBiswanger.json2ts","geyao.html-snippets","Atishay-Jain.All-Autocomplete","christian-kohler.path-intellisense","formulahendry.terminal","humao.rest-client","JakeWilson.vscode-picture","knowbee.vscode-flutter-auto-insert-comma",
+
+        "l7ssha.tag-inserter","LeonQin.auto-insert-comma","loiane.ts-extension-pack","lolkush.quickstart","meganrogge.template-string-converter","PKief.material-icon-theme","pmneo.tsimporter","rafamel.subtle-brackets","rbbit.typescript-hero","sidthesloth.html5-boilerplate","solnurkarim.html-to-css-autocompletion","stringham.move-ts","TaodongWu.ejs-snippets","walkme.HTML5-extension-pack",
         "svipas.prettier-plus",
         "ms-python.vscode-pylance",
         "christian-kohler.npm-intellisense",
@@ -34,5 +36,4 @@
         "naumovs.color-highlight","peakchen90.open-html-in-browser","redhat.vscode-yaml","shardulm94.trailing-spaces","sporiley.css-auto-prefix","Tobermory.es6-string-html","VisualStudioExptTeam.intellicode-api-usage-examples","VisualStudioExptTeam.vscodeintellicode","voldemortensen.rainbow-tags","wayou.vscode-todo-highlight","weijialiu.tinypng","xabikos.JavaScriptSnippets","ZainChen.json","zardoy.fix-all-json","zitup.classnametocss", "vscode.csharp"
 
     ]
-}
 }

@@ -44,7 +44,6 @@ a {
 	-o-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 }
-
 h1,
 h2,
 h3,
@@ -736,6 +735,13 @@ a.navbar-brand {
 .img-responsive {
 	max-width: 100%;
 }
+
+
+#Servicios .icon i {
+  color: #1e1bee;
+  line-height: 1;
+  transition: 0.5s;
+=======
 
 .slide_text h3 {
     font-size: 85px;

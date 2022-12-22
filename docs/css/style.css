@@ -741,9 +741,8 @@ a.navbar-brand {
   color: #1e1bee;
   line-height: 1;
   transition: 0.5s;
-=======
 
-.slide_text h3 {
+slide_text h3 {
     font-size: 85px;
     font-weight: 200;
     padding: 0;

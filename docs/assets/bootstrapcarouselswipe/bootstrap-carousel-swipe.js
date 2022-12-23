@@ -95,5 +95,4 @@
       this.$next = this.$active.next();
       !this.$next.length &&
         this.options.wrap &&
-        (this.$next = this
-            
+        (this.$next = this)

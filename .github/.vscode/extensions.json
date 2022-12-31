@@ -109,6 +109,6 @@
         "zardoy.fix-all-json",
         "zitup.classnametocss",
         "vscode.csharp",
-        "AnbuselvanRocky.bootstrap5-vscode"
+        "AnbuselvanRocky.bootstrap5-vscode", "JosefBiehler.cypress-fixture-intellisense",
     ]
 }

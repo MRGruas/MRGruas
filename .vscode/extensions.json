@@ -35,8 +35,8 @@
         "humao.rest-client",
         "JakeWilson.vscode-picture",
         "knowbee.vscode-flutter-auto-insert-comma",
-        
-        "AnbuselvanRocky.bootstrap5-vscode",
+        "JosefBiehler.cypress-fixture-intellisense"
+        ,"AnbuselvanRocky.bootstrap5-vscode",
         "l7ssha.tag-inserter",
         "LeonQin.auto-insert-comma",
         "loiane.ts-extension-pack",

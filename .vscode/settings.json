@@ -75,5 +75,9 @@
         "zardoy.fix-all-json",
         "zitup.classnametocss",
         "vscode.csharp",
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/index.html",
+    "livePreview.customExternalBrowser": "Chrome",
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+
 }

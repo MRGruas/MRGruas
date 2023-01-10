@@ -88,11 +88,13 @@
     rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
+  <link rel="intro-carousel" type="introCarousel" href="lib/bootstrap/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="js/main.js">
+  <link rel="stylesheet" href="css/style.css">
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="docs/css/responsiveslides.css">
   <link rel="stylesheet" href="docs/css/pogo-slider.min.css">
-  <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"
-    media="intro-carousel,intro-container,screen,projection,introCarousel,carousel-container," />
+  <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css" media="intro-carousel,intro-container,screen,projection,introCarousel,carousel-container," />
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -154,27 +156,23 @@
   ============================-->
   <section id="intro">
     <div class="intro-container">
-      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+      <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <ol class="carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
+        <ol class="carousel-indicators" data-slide="0" class="active">
+          <li data-target="intro-carousel" </li>
+        <div class="carousel-inner" role="banner">
 
           <!-- 1.Autopista Monterrey - Nuevo Laredo -->
-
+        </ol>
           <div class="carousel-item active">
-            <div class="carousel-background"><img src="img/intro-carousel/1.webp"
-                alt="Grúas de plataforma M.R. Grúas Autopista Monterrey - Nuevo Laredo"></div>
+            <div class="carousel-background"><img src="img/intro-carousel/1.webp" alt="Grúas de plataforma M.R. Grúas Autopista Monterrey - Nuevo Laredo" class="d-block w-100"></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h1 style="font-size:3vw;">Grúas de plataforma Servicios en Autopista Monterrey - Nuevo Laredo, Grúas de
-                  plataforma on hire Autopista Monterrey - Nuevo Laredo, Grúas de plataforma on rent Autopista Monterrey
-                  - Nuevo Laredo</h1>
+                <h1 style="font-size:3vw;">Grúas de plataforma Servicios en Autopista Monterrey - Nuevo Laredo, Grúas de plataforma on hire Autopista Monterrey - Nuevo Laredo, Grúas de plataforma on rent Autopista Monterrey - Nuevo Laredo</h1>
                 <p id="hide_mobile">Grúa en Autopista Monterrey - Nuevo Laredo</p>
                 <h1 style="font-size:3vw;">Call us 24x7: +528110775852</h1>
-                <-- <a class="btn-get-started scrollto" href="tel:++528110775852">CLICK HERE TO CALL US 24x7</a>
-                  <a id="hide_mobile" href="https://mrgruas.github.io/docs/index.html" class="btn-get-started scrollto">
-                    CLICK AQUI PARA MAS </a>
+                <a class="btn-get-started scrollto" href="tel:+528110775852">CLICK HERE TO CALL US 24x7</a>
+                  <a id="hide_mobile" href="https://mrgruas.github.io/docs/index.html" class="btn-get-started scrollto"> CLICK AQUI PARA MAS </a>
               </div>
             </div>
           </div>
@@ -512,9 +510,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/intro-carousel/4.png" class="responsive-img"
+                <img src="img/intro-carousel/out (1).png" class="responsive-img"
                   alt="Grúas de plataforma at electricWork  M.R. Grúas">
-                <a href="img/intro-carousel/4.png" class="link-preview" data-lightbox="portfolio" data-title="Card 2"
+                <a href="img/intro-carousel/out (1).png" class="link-preview" data-lightbox="portfolio" data-title="Card 2"
                   title="Preview" style="margin-left: auto;"><i class="ion ion-eye"></i></a>
                 <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> -->
               </figure>
@@ -581,9 +579,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/intro-carousel/4.webp" class="responsive-img"
+                <img src="img/intro-carousel/output (5).png" class="responsive-img"
                   alt="Towing a track in Autopista Monterrey - Nuevo Laredo M.R. Grúas">
-                <a href="img/intro-carousel/4.webp" class="link-preview" data-lightbox="portfolio" data-title="App 3"
+                <a href="img/intro-carousel/output (5).png" class="link-preview" data-lightbox="portfolio" data-title="App 3"
                   title="Preview" style="margin-left: auto;"><i class="ion ion-eye"></i></a>
                 <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> -->
               </figure>
@@ -919,8 +917,7 @@
 
         <div id="map1" href="https://goo.gl/maps/Bm2taxCFni9G7ZjD6" target="_blank" rel="noreferrer" itemprop="hasMap"
           data-tracking-element-type="7">
-          <img src="img/maps/map1.webp" style="max-width: 100%;  height: auto;"
-            alt="M.R. Grúas México 85D, Autopista Monterrey - Nuevo Laredo" title="" />
+          <img src="img/maps/map1.webp" style="max-width: 100%;  height: auto;" alt="M.R. Grúas México 85D, Autopista Monterrey - Nuevo Laredo" title="" />
         </div>
 
 
@@ -971,14 +968,7 @@
                 Monterrey -
                 Nuevo Laredo, Grúa en alquiler, Grúas en alquiler Autopista Monterrey - Nuevo Laredo, Alquiler
                 de grúas,
-                Alquiler de grúas en Autopista Monterrey - Nuevo Laredo, Servicio de alquiler de grúas en
-                Autopista
-                Monterrey - Nuevo Laredo, Empresas de grúas, Empresas de grúas en Autopista Monterrey - Nuevo
-                Laredo,
-                Proveedores de servicios de alquiler de grúas en Autopista Monterrey - Nuevo Laredo, grúa hydra
-                en
-                Autopista Monterrey - Nuevo Laredo, servicio de plataforma en Autopista Monterrey - Nuevo
-                Laredo.</p>
+             .</p>
             </div>
 
             <div class="col-lg-3 col-md-6 footer-links">

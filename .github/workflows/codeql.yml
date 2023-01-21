@@ -18,7 +18,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ "ghanmx-patch-1" ]
   schedule:
-    - cron: '24 4 * * 3'
+    - cron: '34 17 * * 3'
 
 jobs:
   analyze:

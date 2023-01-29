@@ -79,5 +79,10 @@
     "livePreview.defaultPreviewPath": "/index.html",
     "livePreview.customExternalBrowser": "Chrome",
     "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    "html-to-css-autocompletion.triggerCharacters": true,
+    "html-to-css-autocompletion.getSelectorsFromFileTypes": [
+        "html",
+        "php"
+    ],
 
 }

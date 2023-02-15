@@ -84,5 +84,6 @@
         "html",
         "php"
     ],
+    "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
 
 }

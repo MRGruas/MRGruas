@@ -245,3 +245,14 @@
     items: 1,
   });
 })(jQuery);
+$(document).ready(function(){
+  // Mostrar ventana de chat al hacer clic en el botón de WhatsApp
+  $('.whatsapp-button').click(function(){
+      $('.whatsapp-chat').toggleClass('active');
+  });
+
+  // Ocultar ventana de chat al hacer clic en el botón de cerrar
+  $('.whatsapp-chat .close').click(function(){
+      $('.whatsapp-chat').removeClass('active');
+  });
+});

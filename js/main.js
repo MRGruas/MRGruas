@@ -1,4 +1,4 @@
-(function ($) {
+  (function ($) {
   "use strict";
 
   // Preloader
@@ -158,20 +158,20 @@
   });
 
   // Intro carousel
-  var introCarousel = $(".carousel");
-  var introCarouselIndicators = $(".carousel-indicators");
-  introCarousel
+  var introcarousel = $(".carousel");
+  var introcarouselIndicators = $(".carousel-indicators");
+  introcarousel
     .find(".carousel-inner")
     .children(".carousel-item")
     .each(function (index) {
       index === 0
-        ? introCarouselIndicators.append(
-            "<li data-target='#introCarousel' data-slide-to='" +
+        ? introcarouselIndicators.append(
+            "<li data-target='#introcarousel' data-slide-to='" +
               index +
               "' class='active'></li>"
           )
-        : introCarouselIndicators.append(
-            "<li data-target='#introCarousel' data-slide-to='" +
+        : introcarouselIndicators.append(
+            "<li data-target='#introcarousel' data-slide-to='" +
               index +
               "'></li>"
           );

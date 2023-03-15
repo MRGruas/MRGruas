@@ -7062,7 +7062,7 @@ a.close.disabled {
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: -webkit-transform .6s ease-in-out;
+    transition: -webkit-transform 5.6s ease-in-out;
     transition: transform .6s ease-in-out;
     transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out
 }

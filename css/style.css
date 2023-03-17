@@ -135,7 +135,7 @@ h6 {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat
+  background-repeat: repeat
 }
 #intro .carousel-item::before {
   content: "";
@@ -211,7 +211,7 @@ h6 {
 #intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
 #intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: .5s
+  transition: .15s
 }
 #intro .carousel-fade .carousel-inner .active.carousel-item-left,
 #intro .carousel-fade .carousel-inner .active.carousel-item-right,

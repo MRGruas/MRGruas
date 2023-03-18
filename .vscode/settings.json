@@ -75,6 +75,8 @@
         "zardoy.fix-all-json",
         "zitup.classnametocss",
         "vscode.csharp",
+        
+
     ],
     "livePreview.defaultPreviewPath": "/index.html",
     "livePreview.customExternalBrowser": "Chrome",
@@ -85,5 +87,97 @@
         "php"
     ],
     "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
-
-}
+    "html-to-css-autocompletion.folderNamesToBeIncluded": [
+        "css"
+    ],
+    "css-auto-prefix.prefixes": {
+        "transform": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "transition": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "border-radius": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "animation": [
+            "webkit"
+        ],
+        "box-reflect": [
+            "webkit"
+        ],
+        "filter": [
+            "webkit"
+        ],
+        "font-feature-settings": [
+            "webkit",
+            "moz"
+        ],
+        "backface-visibility": [
+            "webkit"
+        ],
+        "box-decoration-break": [
+            "webkit"
+        ],
+        "hyphens": [
+            "webkit",
+            "moz",
+            "ms"
+        ],
+        "marquee-direction": [
+            "webkit"
+        ],
+        "marquee-play-count": [
+            "webkit"
+        ],
+        "marquee-speed": [
+            "webkit"
+        ],
+        "marquee-style": [
+            "webkit"
+        ],
+        "text-combine-upright": [
+            "webkit",
+            "moz",
+            "ms"
+        ],
+        "text-decoration-color": [
+            "moz"
+        ],
+        "text-decoration-line": [
+            "moz"
+        ],
+        "text-decoration-style": [
+            "moz"
+        ],
+        "text-orientation": [
+            "webkit"
+        ],
+        "writing-mode": [
+            "webkit",
+            "ms"
+        ]
+    },
+"css-auto-prefix.enabled": true,
+"css.completion.completePropertyWithSemicolon": false,
+"[css]": {
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "cSpell.fixSpellingWithRenameProvider": false
+    }{
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "cSpell.fixSpellingWithRenameProvider": false}

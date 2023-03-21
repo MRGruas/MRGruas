@@ -106,9 +106,9 @@
         "weijialiu.tinypng",
         "xabikos.JavaScriptSnippets",
         "ZainChen.json",
-        "zardoy.fix-all-json",
+        "zardoy.fix-all-json","ms-vscode.live-server","ritwickdey.LiveServer",
         "zitup.classnametocss",
         "vscode.csharp",
-        "AnbuselvanRocky.bootstrap5-vscode", "JosefBiehler.cypress-fixture-intellisense","jeremyrajan.webpack"
+        "AnbuselvanRocky.bootstrap5-vscode", "JosefBiehler.cypress-fixture-intellisense","jeremyrajan.webpack","GitHub.github-vscode-theme","ms-vscode.js-debug"
     ]
 }

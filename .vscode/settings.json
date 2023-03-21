@@ -77,7 +77,8 @@
         "vscode.csharp",
         
 
-    ],
+    ],"workbench.tips.enabled": true,
+    
     "livePreview.defaultPreviewPath": "/index.html",
     "livePreview.customExternalBrowser": "Chrome",
     "livePreview.autoRefreshPreview": "On All Changes in Editor",
@@ -180,4 +181,4 @@
     "gitlens.codeLens.scopes": [
         "document"
     ],
-    "cSpell.fixSpellingWithRenameProvider": false}
+    "cSpell.fixSpellingWithRenameProvider": false},

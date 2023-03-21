@@ -582,7 +582,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0
 }
 #call-to-action {
-  background: linear-gradient(rgba(0,142,99,.1),rgba(0,0,0,.1)),url(https://mrgruas.github.io/img/about-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(0,142,99,.1),rgba(0,0,0,.1)),url(img/about-bg.jpg) fixed center center;
   background-size: cover;
   padding: 238px 0
 }

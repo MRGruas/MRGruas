@@ -1,6 +1,6 @@
 {
-    "recommendations": ["ms-vscode.js-debug","GitHub.github-vscode-theme","ms-vscode.live-server","ritwickdey.LiveServer",yylzhixian.image2webp,
-        "GitHub.vscode-codeql",
+    "recommendations": ["ms-vscode.js-debug","GitHub.github-vscode-theme","ms-vscode.live-server","ritwickdey.LiveServer","vscode.csharp",
+        "GitHub.vscode-codeql","thepolytechs.chatgpt-code-analyzer",
         "abusaidm.html-snippets",
         "bianxianyang.htmlplay",
         "codeandstuff.package-json-upgrade",

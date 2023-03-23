@@ -9,7 +9,8 @@
 		"vscode": {
 			"extensions": [
 				"DiegoMolina.css-minify",
-				"yylzhixian.image2webp"
+				"yylzhixian.image2webp",
+				"thepolytechs.chatgpt-code-analyzer"
 			]
 		}
 	}

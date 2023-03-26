@@ -5,7 +5,7 @@
         "bianxianyang.htmlplay",
         "codeandstuff.package-json-upgrade",
         "csstools.postcss",
-        "DavidAnson.vscode-markdownlint",
+        "DavidAnson.vscode-markdownlint","smelukov.vscode-csstree",
         "DevEscalus.svg-sprites-viewer",
         "hashrock.vscode-sprite-editor",
         "hbenl.vscode-test-explorer",
@@ -99,6 +99,6 @@
         "ZainChen.json",
         "zardoy.fix-all-json",
         "zitup.classnametocss",
-        "vscode.csharp","jeremyrajan.webpack","1000ch.clean-css","DanielSanMedium.dscodegpt",
+        "vscode.csharp","jeremyrajan.webpack","1000ch.clean-css","DanielSanMedium.dscodegpt","ecmel.vscode-html-css","OlamilekanAjibola.css-selector-generator","pranaygp.vscode-css-peek"
     ],
 }

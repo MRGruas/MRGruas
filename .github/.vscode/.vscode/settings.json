@@ -1,5 +1,6 @@
-{
+{ "files.autoSave": "afterDelay",
     "github.codespaces.defaultExtensions": [
+
         "GitHub.vscode-codeql",
         "abusaidm.html-snippets",
         "bianxianyang.htmlplay",
@@ -178,7 +179,7 @@
     "cSpell.fixSpellingWithRenameProvider": false
     }
     {
-    "editor.suggest.insertMode": "replace",
+    "editor.suggest.insertMode": "replace","css.completion.triggerPropertyValueCompletion": true,
     "gitlens.codeLens.scopes": [
         "document"
     ],

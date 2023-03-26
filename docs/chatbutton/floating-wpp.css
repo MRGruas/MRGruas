@@ -7,6 +7,7 @@
     z-index: 1021;
 }
 
+
 .floating-wpp .floating-wpp-button {
     position: relative;
     border-radius: 50%;
@@ -21,7 +22,8 @@
     position: absolute;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
@@ -121,8 +123,10 @@
     color: #4a4a4a;
     box-shadow: 1px 2px 8px rgba(60, 60, 60, 0.25);
     visibility: visible !important;
-    animation-delay: 0s;
-    animation-duration: 0s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-duration: 0s;
+            animation-duration: 0s;
 }
 
 .floating-wpp .floating-wpp-btn-send {

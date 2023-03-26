@@ -108,7 +108,7 @@
         "ZainChen.json",
         "zardoy.fix-all-json","ms-vscode.live-server","ritwickdey.LiveServer",
         "zitup.classnametocss",
-        "vscode.csharp",
+        "vscode.csharp","ecmel.vscode-html-css","ms-vscode.azure-repos","ms-vscode.remote-explorer","ms-vscode.remote-server","OlamilekanAjibola.css-selector-generator","smelukov.vscode-csstree","stylelint.vscode-stylelint",
         "AnbuselvanRocky.bootstrap5-vscode", "JosefBiehler.cypress-fixture-intellisense","jeremyrajan.webpack","GitHub.github-vscode-theme","ms-vscode.js-debug"
     ]
 }

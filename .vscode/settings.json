@@ -1,0 +1,191 @@
+{
+    "github.codespaces.defaultExtensions": [
+        "GitHub.vscode-codeql",
+        "abusaidm.html-snippets",
+        "bianxianyang.htmlplay",
+        "codeandstuff.package-json-upgrade",
+        "csstools.postcss",
+        "DavidAnson.vscode-markdownlint",
+        "DevEscalus.svg-sprites-viewer",
+        "hashrock.vscode-sprite-editor",
+        "hbenl.vscode-test-explorer",
+        "mrmlnc.vscode-autoprefixer",
+        "ms-azuretools.vscode-azureappservice",
+        "ms-azuretools.vscode-azureresourcegroups",
+        "ms-python.isort",
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-vscode.azure-account",
+        "ms-vscode.test-adapter-converter",
+        "muhammadsayuti.csp-refactoring",
+        "oliversturm.fix-json",
+        "sygene.auto-correct",
+        "WASTeamAccount.WebTemplateStudio-dev-nightly",
+        "ritwickdey.liveserver",
+        "svipas.prettier-plus",
+        "ms-python.vscode-pylance",
+        "christian-kohler.npm-intellisense",
+        "fabiospampinato.vscode-optimize-images",
+        "yylzhixian.image2webp",
+        "jeff-hykin.better-cpp-syntax",
+        "ron0115.image-snippets",
+        "github.vscode-pull-request-github",
+        "kisstkondoros.vscode-gutter-preview",
+        "github.codespaces",
+        "github.remotehub",
+        "ms-vscode.remote-repositories",
+        "ms-ceintl.vscode-language-pack-es",
+        "ms-vscode-remote.remote-wsl-recommender",
+        "ms-vscode.vscode-js-profile-table",
+        "s2junn.image-essentials",
+        "lukapetrovic.image-resizer",
+        "MelvinGuerrero.latino-vscode",
+        "DiegoMolina.css-minify",
+        "aaron-bond.better-comments",
+        "bysabi.prettier-vscode-semistandard",
+        "c0der-himel.vscode-wev-dev-extension-pack",
+        "cschlosser.doxdocgen",
+        "developer2006.svg-gallery",
+        "dsznajder.es7-react-js-snippets",
+        "FEZIRO.image-to-base64",
+        "formulahendry.auto-rename-tag",
+        "GitHub.codespaces",
+        "GitHub.remotehub",
+        "GitHub.vscode-pull-request-github",
+        "gurayyarar.imagesprites",
+        "me-dutour-mathieu.vscode-github-actions",
+        "MS-CEINTL.vscode-language-pack-es",
+        "naumovs.color-highlight",
+        "peakchen90.open-html-in-browser",
+        "redhat.vscode-yaml",
+        "shardulm94.trailing-spaces",
+        "sporiley.css-auto-prefix",
+        "Tobermory.es6-string-html",
+        "VisualStudioExptTeam.intellicode-api-usage-examples",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "voldemortensen.rainbow-tags",
+        "wayou.vscode-todo-highlight",
+        "weijialiu.tinypng",
+        "xabikos.JavaScriptSnippets",
+        "ZainChen.json",
+        "zardoy.fix-all-json",
+        "zitup.classnametocss",
+        "vscode.csharp",
+        
+
+    ],"workbench.tips.enabled": true,"chat-gpt": "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",
+    
+    "livePreview.defaultPreviewPath": "/index.html",
+    "livePreview.customExternalBrowser": "Chrome",
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    "html-to-css-autocompletion.triggerCharacters": true,
+    "html-to-css-autocompletion.getSelectorsFromFileTypes": [
+        "html",
+        "php"
+    ],
+    "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
+    "html-to-css-autocompletion.folderNamesToBeIncluded": [
+        "css"
+    ],
+    "css-auto-prefix.prefixes": {
+        "transform": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "transition": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "border-radius": [
+            "webkit",
+            "moz",
+            "ms",
+            "o"
+        ],
+        "animation": [
+            "webkit"
+        ],
+        "box-reflect": [
+            "webkit"
+        ],
+        "filter": [
+            "webkit"
+        ],
+        "font-feature-settings": [
+            "webkit",
+            "moz"
+        ],
+        "backface-visibility": [
+            "webkit"
+        ],
+        "box-decoration-break": [
+            "webkit"
+        ],
+        "hyphens": [
+            "webkit",
+            "moz",
+            "ms"
+        ],
+        "marquee-direction": [
+            "webkit"
+        ],
+        "marquee-play-count": [
+            "webkit"
+        ],
+        "marquee-speed": [
+            "webkit"
+        ],
+        "marquee-style": [
+            "webkit"
+        ],
+        "text-combine-upright": [
+            "webkit",
+            "moz",
+            "ms"
+        ],
+        "text-decoration-color": [
+            "moz"
+        ],
+        "text-decoration-line": [
+            "moz"
+        ],
+        "text-decoration-style": [
+            "moz"
+        ],
+        "text-orientation": [
+            "webkit"
+        ],
+        "writing-mode": [
+            "webkit",
+            "ms"
+        ]
+    },
+"css-auto-prefix.enabled": true,
+"css.completion.completePropertyWithSemicolon": false,
+"[css]": {
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],
+    "cSpell.fixSpellingWithRenameProvider": false
+    }
+    ,"css.format.enable": true,
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": [
+        "document"
+    ],"css.lint.validProperties": [],
+    "cSpell.fixSpellingWithRenameProvider": false}
+   
+    { "editor.formatOnSave": true,
+"[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+}
+}

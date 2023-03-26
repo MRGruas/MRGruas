@@ -12,7 +12,7 @@
         "mrmlnc.vscode-autoprefixer",
         "ms-azuretools.vscode-azureappservice",
         "ms-azuretools.vscode-azureresourcegroups",
-        "ms-python.isort",
+        "ms-python.isort","stylelint.vscode-stylelint",
         "ms-python.python",
         "ms-toolsai.jupyter",
         "ms-toolsai.jupyter-keymap",
@@ -100,5 +100,5 @@
         "zardoy.fix-all-json",
         "zitup.classnametocss",
         "vscode.csharp","jeremyrajan.webpack","1000ch.clean-css","DanielSanMedium.dscodegpt",
-    ],"DanielSanMedium.dscodegpt"
+    ],
 }

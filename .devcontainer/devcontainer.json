@@ -1,11 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/java-postgres
-{
+{"userEnvProbe": "loginShell","capAdd": "SYS_PTRACE","features": {"devwasm.azurecr.io/dev-wasm/dev-wasm-feature/dotnet-wasi": true},"containerUser": "","init": true,"remoteEnv": {},"updateRemoteUserUID": true,"initializeCommand": "",
 	"name": "Java & PostgreSQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"customizations": {
+	"customizations": {"codespaces": {"openFiles": []},
 		"vscode": {
 			"extensions": [
 				"DiegoMolina.css-minify",

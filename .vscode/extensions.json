@@ -1,10 +1,10 @@
 {
-    "recommendations": ["ms-vscode.js-debug","GitHub.github-vscode-theme","ms-vscode.live-server","ritwickdey.LiveServer","vscode.csharp",
+    "recommendations": ["ms-vscode.js-debug","GitHub.github-vscode-theme","ms-vscode.live-server","ritwickdey.LiveServer","vscode.csharp","Arrendy.gpt3-vscode-extension","GoCodeo.gocodeo",
         "GitHub.vscode-codeql","thepolytechs.chatgpt-code-analyzer",
         "abusaidm.html-snippets",
         "bianxianyang.htmlplay",
         "codeandstuff.package-json-upgrade","stylelint.vscode-stylelint","ms-vscode.remote-server","OlamilekanAjibola.css-selector-generator","smelukov.vscode-csstree"
-        "csstools.postcss","ecmel.vscode-html-css","ms-vscode.azure-repos","ms-vscode.remote-explorer",
+        ,"csstools.postcss","ecmel.vscode-html-css","ms-vscode.azure-repos","ms-vscode.remote-explorer",
         "DavidAnson.vscode-markdownlint",
         "DevEscalus.svg-sprites-viewer",
         "hashrock.vscode-sprite-editor",
@@ -100,5 +100,5 @@
         "zardoy.fix-all-json",
         "zitup.classnametocss",
         "vscode.csharp","jeremyrajan.webpack","1000ch.clean-css","DanielSanMedium.dscodegpt",
-    ],"DanielSanMedium.dscodegpt"
+    ],
 }

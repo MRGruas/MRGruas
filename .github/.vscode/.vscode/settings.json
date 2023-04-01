@@ -78,7 +78,7 @@
         "vscode.csharp",
         
 
-    ],"workbench.tips.enabled": true,"chat-gpt": "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",
+    ,"workbench.tips.enabled": true,"chat-gpt": "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",
     
     "livePreview.defaultPreviewPath": "/index.html",
     "livePreview.customExternalBrowser": "Chrome",
@@ -178,7 +178,7 @@
     ],
     "cSpell.fixSpellingWithRenameProvider": false
     }
-    {
+    ,
     "editor.suggest.insertMode": "replace","css.completion.triggerPropertyValueCompletion": true,
     "gitlens.codeLens.scopes": [
         "document"

@@ -1,5 +1,6 @@
 {
     "github.codespaces.defaultExtensions": [
+    
         "GitHub.vscode-codeql",
         "abusaidm.html-snippets",
         "bianxianyang.htmlplay",
@@ -75,15 +76,8 @@
         "zardoy.fix-all-json",
         "zitup.classnametocss",
         "vscode.csharp",
-        
-
-    "livePreview.defaultPreviewPath": "/index.html",
-    "livePreview.customExternalBrowser": "Chrome",
-    "livePreview.autoRefreshPreview": "On All Changes in Editor",
-    "html-to-css-autocompletion.triggerCharacters": true,
-    "html-to-css-autocompletion.getSelectorsFromFileTypes": [
         "html",
-        "php"
+        "php",
     ],
     "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
     "html-to-css-autocompletion.folderNamesToBeIncluded": [
@@ -182,8 +176,4 @@
     ],"css.lint.validProperties": [],
     "cSpell.fixSpellingWithRenameProvider": false}
    
-    { "editor.formatOnSave": true,
-"[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-}
-}
+

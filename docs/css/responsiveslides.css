@@ -9,7 +9,7 @@
   margin: 0;
 }
 
-.rslides li {
+.rslides li {backface-visibility: visible;
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;

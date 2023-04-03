@@ -1,5 +1,27 @@
 {
     "recommendations": [
-        "thepolytechs.chatgpt-code-analyzer"
+        "GoCodeo.gocodeo",
+        "yylzhixian.image2webp",
+        "bianxianyang.htmlplay",
+        "bysabi.prettier-vscode-semistandard",
+        "DiegoMolina.css-minify",
+        "ecmel.vscode-html-css",
+        "GitHub.codespaces",
+        "GitHub.remotehub",
+        "GitHub.vscode-codeql",
+        "hbenl.vscode-test-explorer",
+        "me-dutour-mathieu.vscode-github-actions",
+        "mrmlnc.vscode-autoprefixer",
+        "MS-CEINTL.vscode-language-pack-es",
+        "ms-vscode-remote.remote-wsl-recommender",
+        "ms-vscode.remote-repositories",
+        "ms-vscode.test-adapter-converter",
+        "ms-vscode.vscode-js-profile-table",
+        "muhammadsayuti.csp-refactoring",
+        "OlamilekanAjibola.css-selector-generator",
+        "redhat.vscode-yaml",
+        "stylelint.vscode-stylelint",
+        "vscode.csharp",
+        "thepolytechs.chatgpt-code-analyzer",
     ]
 }

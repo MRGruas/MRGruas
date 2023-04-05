@@ -1,0 +1,119 @@
+{
+    "livePreview.autoRefreshPreview": "On All Changes in Editor",
+    "chat-gpt": "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",
+    "chatgpt-code-analyzer.optimize": "true","gocodeo.authToken": "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",
+    "css.completion.completePropertyWithSemicolon": true,
+    "css.customData": [],
+    "css.format.enable": true,
+    "[code-text-binary]": {},
+    "[scss]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "scss.validate": true,
+    "[html]": {
+        "editor.suggest.insertMode": "replace"
+    },
+    "[csharp]": {
+        "editor.maxTokenizationLineLength": 2500
+    },
+    "stylelint.configFile": "",
+    "stylelint.snippet": [
+        "css",
+        "less",
+        "postcss"
+    ],
+    "css.styleSheets": [],
+    "stylelint.enable": true,
+    "stylelint.packageManager": "npm",
+    "stylelint.codeAction.disableRuleComment": {
+        "location": "separateLine"
+    },
+    "stylelint.stylelintPath": "",
+    "stylelint.customSyntax": "",
+    "[git-commit]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true
+        },
+        "editor.rulers": [
+            72
+        ],
+        "workbench.editor.restoreViewState": false
+    },
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500
+    },
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "css.completion.triggerPropertyValueCompletion": true,
+    "debug.javascript.autoAttachFilter": "always",
+    "stylelint.reportInvalidScopeDisables": false,
+    "security.workspace.trust.enabled": true,
+    "git.autofetch": true,
+    "editor.matchBrackets": "always",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.linkedEditing": true,
+    "audioCues.diffLineDeleted": "on",
+    "codeQL.telemetry.enableTelemetry": true,
+    "chatgpt-code-analyzer": "true",
+    
+    "[css]": {
+        "[jsonc]": {
+            "editor.quickSuggestions": {
+                "strings": true
+            },
+            "editor.suggest.insertMode": "replace"
+        },
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "stylelint.config": {},
+    "remoteHub.uncommittedChangesOnEntry": "none",
+    "window.zoomLevel": 1,
+    "remoteHub.commitDirectlyWarning": "off",
+    "autoprefixer.ignoreFiles": [],
+    "autoprefixer.options": {},
+    "json.format.enable": true,
+    "files.autoSave": "afterDelay",
+    "css.format.braceStyle": "expand",
+    "remote.downloadExtensionsLocally": true,
+    "workbench.settings.editor": "json",
+    "css.enabledLanguages": [
+        "html"
+    ],
+    "css.format.maxPreserveNewLines": null,
+    "css.hover.documentation": true,
+    "css.format.newlineBetweenRules": true,
+    "extensions.autoCheckUpdates": true,
+    "autoprefixer.findExternalAutoprefixer": true,
+    "css.format.newlineBetweenSelectors": true,
+    "[coffeescript]": {
+        "diffEditor.ignoreTrimWhitespace": false
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "html.autoClosingTags": true,
+    "html.autoCreateQuotes": true,
+    "html.format.enable": true,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "autoprefixer.formatOnSave": false,
+    "files.autoSaveDelay": 1000,
+    "livePreview.notifyOnOpenLooseFile": true,
+    "csstree.enable": true,
+    "redhat.telemetry.enabled": true,
+    "codeQL.variantAnalysis.controllerRepo": "MRGruas/MRGruas.github.io",
+"CodeGPT.apiKey": "OpenAI",
+"CodeGPT.maxTokens": 1,
+"CodeGPT.model": "gpt-3.5-turbo",
+"liveServer.settings.AdvanceCustomBrowserCmdLine": null,
+"livePreview.openPreviewTarget": "External Browser",
+"flutter-auto-insert-comma.activationFiles": [
+
+    "dart"
+],
+"CodeGPT.query.language": "Spanish",
+"CodeGPT.temperature": 0.3
+}

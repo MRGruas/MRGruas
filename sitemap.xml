@@ -5,7 +5,9 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
+ "images": [
+      "apple-touch-icon-120x120.png"
+   ],
 
 <url>
   <loc>https://mrgruas.github.io/</loc>

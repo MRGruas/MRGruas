@@ -49,7 +49,7 @@
         "editor.suggest.insertMode": "replace"
     },
     "css.completion.triggerPropertyValueCompletion": true,
-    "debug.javascript.autoAttachFilter": "always",
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
     "stylelint.reportInvalidScopeDisables": false,
     "security.workspace.trust.enabled": true,
     "git.autofetch": true,
@@ -115,5 +115,11 @@
     "dart"
 ],
 "CodeGPT.query.language": "Spanish",
-"CodeGPT.temperature": 0.3
+"CodeGPT.temperature": 0.3, 
+"scss.format.enable": true, 
+"prettier.cssEnable": [
+    "css",
+    "less",
+    "scss"
+],"editor.colorDecorators": true
 }

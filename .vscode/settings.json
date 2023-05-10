@@ -1,7 +1,7 @@
 {
     "livePreview.autoRefreshPreview": "On All Changes in Editor",
     "chat-gpt": "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",
-    "chatgpt-code-analyzer.optimize": "true","gocodeo.authToken": "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",
+    "chatgpt-code-analyzer.optimize": "true","gocodeo.authToken": "",
     "css.completion.completePropertyWithSemicolon": true,
     "css.customData": [],
     "css.format.enable": true,
@@ -121,5 +121,5 @@
     "css",
     "less",
     "scss"
-],"editor.colorDecorators": true
+],"editor.colorDecorators": true, 
 }

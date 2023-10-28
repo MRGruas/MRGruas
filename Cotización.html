@@ -45,9 +45,13 @@
             font-size: 20px;
             text-align: center;
         }
+        #map {
+            height: 300px;
+            margin-top: 20px;
+        }
     </style>
 </head>
-<body onload=“initMap()”>
+<body>
     <div class=“container”>
         <h1>Cotización de Servicios de Grúa</h1>
         <label for=“tipoGrua”>Tipo de Grúa:</label>
@@ -67,7 +71,7 @@
         <div id=“resultado”></div>
     </div>
 
-    <div id=“map” style=“height: 300px;”></div>
+    <div id=“map”></div>
 
     <script>
         var map;
@@ -100,17 +104,19 @@
                 directionsService.route(request, function(result, status) {
                     if (status == google.maps.DirectionsStatus.OK) {
                         var distanciaGoogle = result.routes[0].legs[0].distance.value / 1000;
-                        calcularCotizacionConDistancia(distanciaGoogle);
+                        mostrarCotizacion(distanciaGoogle, tipoGrua, casetas);
                     } else {
                         document.getElementById(“resultado”).innerHTML = “No se pudo calcular la distancia entre los puntos.”;
                     }
                 });
+            } else if (distancia) {
+                mostrarCotizacion(distancia, tipoGrua, casetas);
             } else {
-                calcularCotizacionConDistancia(distancia);
+                document.getElementById(“resultado”).innerHTML = “Por favor ingresa las coordenadas de origen y destino o la distancia.”;
             }
         }
 
-        function calcularCotizacionConDistancia(distancia) {
+        function mostrarCotizacion(distancia, tipoGrua, casetas) {
             var tipoGrua = document.getElementById(“tipoGrua”).value;
 
             var costoKilometro, banderazo;
@@ -133,7 +139,11 @@
         }
     </script>
 
+    <script src=“https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap” async defer></script>
+</body>
+</html>
 
-    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyAynTaBwOBY0dq5EPPDTzjmI9qfYkw5AOs"></script>
+
+  <script src=“https://maps.googleapis.com/maps/api/js?key=AIzaSyAynTaBwOBY0dq5EPPDTzjmI9qfYkw5AOs&callback=initMap” async defer></script>
 </body>
 </html>

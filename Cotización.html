@@ -45,10 +45,6 @@
             font-size: 20px;
             text-align: center;
         }
-        #map {
-            height: 300px;
-            margin-top: 20px;
-        }
     </style>
 </head>
 <body>
@@ -59,66 +55,22 @@
             <option value="A">Tipo A</option>
             <option value="B">Tipo B</option>
         </select>
-        <label for="origen">Coordenadas de Origen:</label>
-        <input type="text" id="origen">
-        <label for="destino">Coordenadas de Destino:</label>
-        <input type="text" id="destino">
         <label for="distancia">Distancia (en kilómetros):</label>
         <input type="number" id="distancia">
         <label for="casetas">Número de Casetas:</label>
         <input type="number" id="casetas">
-        <button onclick="calcularDistancia()">Calcular Distancia</button>
         <button onclick="calcularCotizacion()">Calcular Cotización</button>
         <div id="resultado"></div>
     </div>
 
-    <div id="map"></div>
-
     <script>
-        var map;
-        var directionsService;
-        var directionsRenderer;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 26.527189, lng: -100.172205 },
-                zoom: 10,
-            });
-            directionsService = new google.maps.DirectionsService();
-            directionsRenderer = new google.maps.DirectionsRenderer({ map: map });
-        }
-
-        function calcularDistancia() {
-            var origen = document.getElementById("origen").value;
-            var destino = document.getElementById("destino").value;
-
-            if (origen && destino) {
-                var request = {
-                    origin: origen,
-                    destination: destino,
-                    travelMode: google.maps.TravelMode.DRIVING,
-                };
-
-                directionsService.route(request, function(result, status) {
-                    if (status == google.maps.DirectionsStatus.OK) {
-                        var distanciaGoogle = result.routes[0].legs[0].distance.value / 1000;
-                        document.getElementById("distancia").value = distanciaGoogle.toFixed(2);
-                    } else {
-                        document.getElementById("resultado").innerHTML = "No se pudo calcular la distancia entre los puntos.";
-                    }
-                });
-            } else {
-                document.getElementById("resultado").innerHTML = "Por favor ingresa las coordenadas de origen y destino.";
-            }
-        }
-
         function calcularCotizacion() {
             var tipoGrua = document.getElementById("tipoGrua").value;
             var distancia = parseFloat(document.getElementById("distancia").value);
-            var casetas = parseInt(document.getElementById("casetas").value);
+            var casetas = parseFloat(document.getElementById("casetas").value);
 
-            if (isNaN(distancia) || isNaN(casetas)) {
-                document.getElementById("resultado").innerHTML = "Por favor ingresa la distancia y el número de casetas válidos.";
+            if (isNaN(distancia)) {
+                document.getElementById("resultado").innerHTML = "Por favor ingresa la distancia válida.";
                 return;
             }
 
@@ -135,13 +87,11 @@
             }
 
             var costoTotalGrua = banderazo + costoKilometro * distancia;
-            var costoCasetas = 320 * casetas;
+            var costoCasetas = isNaN(casetas) ? 0 : 320 * casetas;
             var costoTotal = costoTotalGrua + costoCasetas;
 
             document.getElementById("resultado").innerHTML = "El costo de la grúa de tipo " + tipoGrua + " para " + distancia + " kilómetros es: $" + costoTotal.toFixed(2);
         }
     </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=""&callback=initMap" async defer></script>
 </body>
 </html>

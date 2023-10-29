@@ -1,97 +1,96 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Cotización de Servicios de Grúa</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            max-width: 400px;
-            margin: 20px auto;
-            background-color: #fff;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            text-align: center;
-        }
-        label {
-            font-weight: bold;
-        }
-        select, input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        button {
-            width: 100%;
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        #resultado {
-            margin-top: 20px;
-            font-size: 20px;
-            text-align: center;
-        }
-    </style>
+<title>Cotización de Servicios de Grúa</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+margin: 0;
+padding: 0;
+}
+.container {
+width: 80%;
+max-width: 400px;
+margin: 20px auto;
+background-color: #fff;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+text-align: center;
+}
+label {
+font-weight: bold;
+}
+select, input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+}
+button {
+width: 100%;
+background-color: #007BFF;
+color: #fff;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+button:hover {
+background-color: #0056b3;
+}
+#resultado {
+margin-top: 20px;
+font-size: 20px;
+text-align: center;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Cotización de Servicios de Grúa</h1>
-        <label for="tipoGrua">Tipo de Grúa:</label>
-        <select id="tipoGrua">
-            <option value="A">Tipo A</option>
-            <option value="B">Tipo B</option>
-        </select>
-        <label for="distancia">Distancia (en kilómetros):</label>
-        <input type="number" id="distancia">
-        <label for="casetas">Número de Casetas:</label>
-        <input type="number" id="casetas">
-        <button onclick="calcularCotizacion()">Calcular Cotización</button>
-        <div id="resultado"></div>
-    </div>
+<div class=“container”>
+<h1>Cotización de Servicios de Grúa</h1>
+<label for=“tipoGrua”>Tipo de Grúa:</label>
+<select id=“tipoGrua”>
+<option value=“A”>Tipo A</option>
+<option value=“B”>Tipo B</option>
+</select>
+<label for=“distancia”>Distancia (en kilómetros):</label>
+<input type=“number” id=“distancia”>
+<label for=“casetas”>Número de Casetas:</label>
+<input type=“number” id=“casetas”>
+<button onclick=“calcularCotizacion()”>Calcular Cotización</button>
+<div id=“resultado”></div>
+</div>
 
-    <script>
-        function calcularCotizacion() {
-            var tipoGrua = document.getElementById("tipoGrua").value;
-            var distancia = parseFloat(document.getElementById("distancia").value);
-            var casetas = parseFloat(document.getElementById("casetas").value);
+<script>
+function calcularCotizacion() {
+var tipoGrua = document.getElementById(“tipoGrua”).value;
+var distancia = parseFloat(document.getElementById(“distancia”).value);
+var casetas = parseFloat(document.getElementById(“casetas”).value);
 
-            if (isNaN(distancia)) {
-                document.getElementById("resultado").innerHTML = "Por favor ingresa la distancia válida.";
-                return;
-            }
+if (isNaN(distancia)) {
+document.getElementById(“resultado”).innerHTML = “Por favor ingresa la distancia válida.”;
+return;
+}
 
-            var costoKilometro, banderazo;
-            if (tipoGrua === "A") {
-                costoKilometro = 18.85;
-                banderazo = 558;
-            } else if (tipoGrua === "B") {
-                costoKilometro = 22.96;
-                banderazo = 689;
-            } else {
-                document.getElementById("resultado").innerHTML = "Tipo de grúa no válido. Debe ser 'A' o 'B'.";
-                return;
-            }
+var costoKilometro, banderazo;
+if (tipoGrua === “A”) {
+costoKilometro = 18.85;
+banderazo = 558;
+} else if (tipoGrua === “B”) {
+costoKilometro = 22.96;
+banderazo = 689;
+} else {
+document.getElementById(“resultado”).innerHTML = “Tipo de grúa no válido. Debe ser ‘A’ o ‘B’.”;
+return;
+}
 
-            var costoTotalGrua = banderazo + costoKilometro * distancia;
-            var costoCasetas = isNaN(casetas) ? 0 : 320 * casetas;
-            var costoTotal = costoTotalGrua + costoCasetas;
+var costoTotalGrua = banderazo + costoKilometro * distancia;
+var costoCasetas = isNaN(casetas) ? 0 : 320 * casetas;
+var costoTotal = costoTotalGrua + costoCasetas;
 
-            document.getElementById("resultado").innerHTML = "El costo de la grúa de tipo " + tipoGrua + " para " + distancia + " kilómetros es: $" + costoTotal.toFixed(2);
-        }
-    </script>
+document.getElementById(“resultado”).innerHTML = “El costo de la grúa de tipo " + tipoGrua + " para " + distancia + " kilómetros es: $” + costoTotal.toFixed(2);
+}
+</script>
 </body>
 </html>

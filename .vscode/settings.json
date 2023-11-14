@@ -121,5 +121,11 @@
     "css",
     "less",
     "scss"
-],"editor.colorDecorators": true, 
+],
+"editor.colorDecorators": true,
+"html-to-css-autocompletion.folderNamesToBeIncluded": [
+    "css"
+],
+"html-to-css-autocompletion.triggerCharacters": true,
+
 }

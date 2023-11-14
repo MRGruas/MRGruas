@@ -73,7 +73,7 @@
     },
     "stylelint.config": {},
     "remoteHub.uncommittedChangesOnEntry": "none",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -2,
     "remoteHub.commitDirectlyWarning": "off",
     "autoprefixer.ignoreFiles": [],
     "autoprefixer.options": {},

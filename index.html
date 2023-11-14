@@ -81,6 +81,8 @@
 <head>
 
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 <body>
 
@@ -237,10 +239,9 @@
 
     <div class="whatsapp-button">
 
-      <a href="https://api.whatsapp.com/send?phone=8115149515&amp;text=Hola%20necesito%20un%20servicio%20de%20grua,%20cu%C3%A1l%20ser%C3%ADa%20el%20costo%20En%20un%20momento%20le%20mando%20mi%20ubicaci%C3%B3n%20y%20las%20especificaciones%20de%20mi%20veh%C3%ADculo." target="_blank" style="position: relative; left: 385px; top: -38px; transition: none 0s ease 0s; cursor: move;" data-selected="true" data-label-id="0" display:
-      flex
-      justify-content:
-      flex-end>
+      <a href="https://api.whatsapp.com/send?phone=8115149515&amp;text=Hola%20necesito%20un%20servicio%20de%20grua,%20cu%C3%A1l%20ser%C3%ADa%20el%20costo%20En%20un%20momento%20le%20mando%20mi%20ubicaci%C3%B3n%20y%20las%20especificaciones%20de%20mi%20veh%C3%ADculo."
+        target="_blank" style="position: relative; left: 385px; top: -38px; transition: none 0s ease 0s; cursor: move;"
+        data-selected="true" data-label-id="0" display: flex justify-content: flex-end>
 
         <i class="fab fa-whatsapp"></i> Chat por WhatsApp</a>
     </div>
@@ -1443,7 +1444,48 @@
         </nav>
 
         <div id="mobile-body-overly"></div>
-
+        <script>
+          $(document).ready(function () {
+            $("a").on('click', function (event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 800, function () {
+                  window.location.hash = hash;
+                });
+              }
+            });
+          });
+        </script>
+        <script>
+          $(document).ready(function () {
+            var stickyNavTop = $('#navbar').offset().top;
+            var stickyNav = function () {
+              var scrollTop = $(window).scrollTop();
+              if (scrollTop > stickyNavTop) {
+                $('#navbar').addClass('sticky');
+              } else {
+                $('#navbar').removeClass('sticky');
+              }
+            };
+            stickyNav();
+            $(window).scroll(function () {
+              stickyNav();
+            });
+          });
+        </script>
+        <script>
+          $(document).ready(function () {
+            $('#contact-popup').click(function () {
+              $('.contact-form').fadeIn();
+            });
+            $('.close-popup').click(function () {
+              $('.contact-form').fadeOut();
+            });
+          });
+        </script>
   </body>
 
 

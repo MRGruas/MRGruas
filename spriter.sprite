@@ -1,4 +1,4 @@
-{
+<html><head></head><body>{
    "style_name": "spriter",
    "images": [
       "apple-touch-icon-120x120.png"
@@ -12,4 +12,4 @@
    "path_prefix": "",
    "output": "png",
    "enable_cache_busting": true
-}
+}</body></html>

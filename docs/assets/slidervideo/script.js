@@ -56,7 +56,7 @@
             })
             .attr(
               "src",
-              "https://img.youtube.com/vi/" + c + "/maxresdefault.jpg"
+              "https://img.youtube.com/vi/" + c + "/maxrsesdefault.jpg"
             );
       return a;
     };

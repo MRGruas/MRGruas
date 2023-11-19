@@ -73,7 +73,7 @@
     },
     "stylelint.config": {},
     "remoteHub.uncommittedChangesOnEntry": "none",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -2,
     "remoteHub.commitDirectlyWarning": "off",
     "autoprefixer.ignoreFiles": [],
     "autoprefixer.options": {},
@@ -121,6 +121,7 @@
     "css",
     "less",
     "scss"
+<<<<<<< HEAD
 ],"editor.colorDecorators": true, "[github-actions-workflow]": {"breadcrumbs.showArrays": true}, 
 "[jsonl]": {"editor.autoIndent": "advanced"}, "[jsonc]": {
     "editor.quickSuggestions": {
@@ -128,3 +129,13 @@
     },
     "editor.suggest.insertMode": "replace"
 }, "npm.autoDetect": "on", "npm-intellisense.scanDevDependencies": false, "npm-intellisense.importQuotes": "'", "npm.packageManager": "auto"}
+=======
+],
+"editor.colorDecorators": true,
+"html-to-css-autocompletion.folderNamesToBeIncluded": [
+    "css"
+],
+"html-to-css-autocompletion.triggerCharacters": true,
+
+}
+>>>>>>> 2266aed99bc327ffd95d4827840259ef2f453ba5

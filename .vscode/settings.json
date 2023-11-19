@@ -121,5 +121,10 @@
     "css",
     "less",
     "scss"
-],"editor.colorDecorators": true, 
-}
+],"editor.colorDecorators": true, "[github-actions-workflow]": {"breadcrumbs.showArrays": true}, 
+"[jsonl]": {"editor.autoIndent": "advanced"}, "[jsonc]": {
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+}, "npm.autoDetect": "on", "npm-intellisense.scanDevDependencies": false, "npm-intellisense.importQuotes": "'", "npm.packageManager": "auto"}

@@ -1,141 +1,146 @@
 {
-    "livePreview.autoRefreshPreview": "On All Changes in Editor",
-    "chat-gpt": "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",
-    "chatgpt-code-analyzer.optimize": "true","gocodeo.authToken": "",
-    "css.completion.completePropertyWithSemicolon": true,
-    "css.customData": [],
-    "css.format.enable": true,
-    "[code-text-binary]": {},
-    "[scss]": {
-        "editor.suggest.insertMode": "replace"
-    },
-    "scss.validate": true,
-    "[html]": {
-        "editor.suggest.insertMode": "replace"
-    },
-    "[csharp]": {
-        "editor.maxTokenizationLineLength": 2500
-    },
-    "stylelint.configFile": "",
-    "stylelint.snippet": [
-        "css",
-        "less",
-        "postcss"
-    ],
-    "css.styleSheets": [],
-    "stylelint.enable": true,
-    "stylelint.packageManager": "npm",
-    "stylelint.codeAction.disableRuleComment": {
-        "location": "separateLine"
-    },
-    "stylelint.stylelintPath": "",
-    "stylelint.customSyntax": "",
-    "[git-commit]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true
-        },
-        "editor.rulers": [
-            72
-        ],
-        "workbench.editor.restoreViewState": false
-    },
-    "[javascript]": {
-        "editor.maxTokenizationLineLength": 2500
-    },
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace"
-    },
-    "css.completion.triggerPropertyValueCompletion": true,
-    "debug.javascript.autoAttachFilter": "onlyWithFlag",
-    "stylelint.reportInvalidScopeDisables": false,
-    "security.workspace.trust.enabled": true,
-    "git.autofetch": true,
-    "editor.matchBrackets": "always",
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "editor.linkedEditing": true,
-    "audioCues.diffLineDeleted": "on",
-    "codeQL.telemetry.enableTelemetry": true,
-    "chatgpt-code-analyzer": "true",
-    
-    "[css]": {
-        "[jsonc]": {
-            "editor.quickSuggestions": {
-                "strings": true
-            },
-            "editor.suggest.insertMode": "replace"
-        },
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "stylelint.config": {},
-    "remoteHub.uncommittedChangesOnEntry": "none",
-    "window.zoomLevel": -2,
-    "remoteHub.commitDirectlyWarning": "off",
-    "autoprefixer.ignoreFiles": [],
-    "autoprefixer.options": {},
-    "json.format.enable": true,
-    "files.autoSave": "afterDelay",
-    "css.format.braceStyle": "expand",
-    "remote.downloadExtensionsLocally": true,
-    "workbench.settings.editor": "json",
-    "css.enabledLanguages": [
-        "html"
-    ],
-    "css.format.maxPreserveNewLines": null,
-    "css.hover.documentation": true,
-    "css.format.newlineBetweenRules": true,
-    "extensions.autoCheckUpdates": true,
-    "autoprefixer.findExternalAutoprefixer": true,
-    "css.format.newlineBetweenSelectors": true,
-    "[coffeescript]": {
-        "diffEditor.ignoreTrimWhitespace": false
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "html.autoClosingTags": true,
-    "html.autoCreateQuotes": true,
-    "html.format.enable": true,
-    "editor.acceptSuggestionOnCommitCharacter": true,
-    "autoprefixer.formatOnSave": false,
-    "files.autoSaveDelay": 1000,
-    "livePreview.notifyOnOpenLooseFile": true,
-    "csstree.enable": true,
-    "redhat.telemetry.enabled": true,
-    "codeQL.variantAnalysis.controllerRepo": "MRGruas/MRGruas.github.io",
-"CodeGPT.apiKey": "OpenAI",
-"CodeGPT.maxTokens": 1,
-"CodeGPT.model": "gpt-3.5-turbo",
-"liveServer.settings.AdvanceCustomBrowserCmdLine": null,
-"livePreview.openPreviewTarget": "External Browser",
-"flutter-auto-insert-comma.activationFiles": [
-
-    "dart"
-],
-"CodeGPT.query.language": "Spanish",
-"CodeGPT.temperature": 0.3, 
-"scss.format.enable": true, 
-"prettier.cssEnable": [
-    "css",
-    "less",
-    "scss"
-<<<<<<< HEAD
-],"editor.colorDecorators": true, "[github-actions-workflow]": {"breadcrumbs.showArrays": true}, 
-"[jsonl]": {"editor.autoIndent": "advanced"}, "[jsonc]": {
-    "editor.quickSuggestions": {
+  "AutoPreview.center": true,
+  "AutoPreview.packageManager": "",
+  "AutoPreview.serverURL": "",
+  "[code-text-binary]": {},
+  "[coffeescript]": {
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[css]": {
+    "[jsonc]": {
+      "editor.quickSuggestions": {
         "strings": true
+      },
+      "editor.suggest.insertMode": "replace"
+    },
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[git-commit]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "editor.rulers": [72],
+    "workbench.editor.restoreViewState": false
+  },
+  "[github-actions-workflow]": {
+    "breadcrumbs.showArrays": true
+  },
+  "[html]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
     },
     "editor.suggest.insertMode": "replace"
-}, "npm.autoDetect": "on", "npm-intellisense.scanDevDependencies": false, "npm-intellisense.importQuotes": "'", "npm.packageManager": "auto"}
-=======
-],
-"editor.colorDecorators": true,
-"html-to-css-autocompletion.folderNamesToBeIncluded": [
-    "css"
-],
-"html-to-css-autocompletion.triggerCharacters": true,
-
+  },
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "[jsonl]": {
+    "editor.autoIndent": "advanced"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[scss]": {
+    "editor.suggest.insertMode": "replace"
+  },
+  "audioCues.diffLineDeleted": "on",
+  "auto-correct.dictionary": [
+    {
+      "languages": ["*"],
+      "useLargeList": false,
+      "words": {}
+    },
+    {
+      "languages": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+      ],
+      "words": {
+        "cosnt": "const",
+        "functoin": "function"
+      }
+    }
+  ],
+  "autoprefixer.findExternalAutoprefixer": true,
+  "autoprefixer.formatOnSave": false,
+  "autoprefixer.ignoreFiles": [],
+  "autoprefixer.options": {},
+  "codeQL.variantAnalysis.controllerRepo": "https://github.com/MRGruas/MRGruas.github.io",
+  "css.completion.completePropertyWithSemicolon": true,
+  "css.completion.triggerPropertyValueCompletion": true,
+  "css.customData": [],
+  "css.enabledLanguages": ["html"],
+  "css.format.braceStyle": "expand",
+  "css.format.enable": true,
+  "css.format.maxPreserveNewLines": null,
+  "css.format.newlineBetweenRules": true,
+  "css.format.newlineBetweenSelectors": true,
+  "css.hover.documentation": true,
+  "css.styleSheets": [],
+  "csstree.enable": true,
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.colorDecorators": true,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "always",
+  "extensions.autoCheckUpdates": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "flutter-auto-insert-comma.activationFiles": ["dart"],
+  "git.autofetch": true,
+  "html.autoClosingTags": true,
+  "html.autoCreateQuotes": true,
+  "html.format.enable": true,
+  "json.format.enable": true,
+  "livePreview.autoRefreshPreview": "true",
+  "livePreview.notifyOnOpenLooseFile": true,
+  "livePreview.openPreviewTarget": "External Browser",
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.scanDevDependencies": false,
+  "npm.autoDetect": "on",
+  "npm.packageManager": "auto",
+  "prettier.cssEnable": ["css", "less", "scss"],
+  "redhat.telemetry.enabled": true,
+  "remote.downloadExtensionsLocally": true,
+  "remoteHub.commitDirectlyWarning": "off",
+  "remoteHub.uncommittedChangesOnEntry": "none",
+  "scss.format.enable": true,
+  "scss.validate": true,
+  "security.workspace.trust.enabled": true,
+  "stylelint.codeAction.disableRuleComment": {
+    "location": "separateLine"
+  },
+  "stylelint.config": {},
+  "stylelint.configFile": "",
+  "stylelint.customSyntax": "",
+  "stylelint.enable": true,
+  "stylelint.packageManager": "npm",
+  "stylelint.reportInvalidScopeDisables": false,
+  "stylelint.snippet": ["css", "less", "postcss"],
+  "stylelint.stylelintPath": "",
+  "window.zoomLevel": -2,
+  "workbench.settings.editor": "json",
+  "fixJson.indentationSpaces": null,
+  "[http]": {
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    }
+  }
 }
->>>>>>> 2266aed99bc327ffd95d4827840259ef2f453ba5

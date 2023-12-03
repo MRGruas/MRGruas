@@ -749,23 +749,15 @@
             align-items: center;
           }
         </style>
-        </head>
 
-        <body>
           <div class="center">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.1255687440619!2d-100.00849672379339!3d26.51204636793344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86623772c3be2491%3A0x19eff24290a4fd31!2sM.R.%20Gr%C3%BAas!5e0!3m2!1ses-419!2smx!4v1660356634896!5m2!1ses-419!2smx"
-              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.1255687440619!2d-100.00849672379339!3d26.51204636793344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86623772c3be2491%3A0x19eff24290a4fd31!2sM.R.%20Gr%C3%BAas!5e0!3m2!1ses-419!2smx!4v1660356634896!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
           <div class="center">
-            <div
-              style="background-color: white; width: 360px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px; font: 400 15px / 1.3 -apple-system, BlinkMacSystemFont, Roboto, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">
-              <div
-                style="height: 100px; max-height: 100px; min-height: 100px; background-color: rgb(10, 95, 84); color: white; border-radius: 10px 10px 0px 0px; display: flex; align-items: center;">
-                <img src="https://mrgruas.github.io/img/call-to-action-bg.png" alt="Brand Image"
-                  style="margin-left: 20px; width: 50px; height: 50px; border-radius: 25px; box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;">
+            <div style="background-color: white; width: 360px; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px; font: 400 15px / 1.3 -apple-system, BlinkMacSystemFont, Roboto, &quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">
+              <div style="height: 100px; max-height: 100px; min-height: 100px; background-color: rgb(10, 95, 84); color: white; border-radius: 10px 10px 0px 0px; display: flex; align-items: center;">
+                <img src="https://mrgruas.github.io/img/call-to-action-bg.png" alt="Brand Image" style="margin-left: 20px; width: 50px; height: 50px; border-radius: 25px; box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 6px;">
                 <div style="margin-left: 20px;">
                   <div style="font-size: 16px; font-weight: 700;">MRGrúas</div>
                 </div>
@@ -1272,97 +1264,70 @@
 
 
 
-
-
-        <iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
-
-        <iframe name="__uspapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
-
-        <iframe name="googlefcIna1
-        <iframe name=" googlefcloaded"="" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe>
-
         <nav id="mobile-nav">
-
-          <ul class="" style="touch-action: pan-y;" id="">
-
-            <li class="">
-
+          <ul class="nav-list" style="touch-action: pan-y;">
+            <li class="nav-item">
               <a href="#intro">Inicio</a>
-
             </li>
-
-            <li class="">
-
+            <li class="nav-item">
               <a href="#about">Nosotros</a>
-
             </li>
-
-            <li class="">
-
-              <a href="#Servicios">Servicios</a>
-
+            <li class="nav-item">
+              <a href="#servicios">Servicios</a>
             </li>
-
-            <li class="">
-
-              <a href="#call-to-action">Llámanos</a>
-
+            <li class="nav-item">
+              <a href="#llamanos">Llámanos</a>
             </li>
-
-            <li class="">
-
-              <a href="#contact">Contacto</a>
-
+            <li class="nav-item">
+              <a href="#contacto">Contacto</a>
             </li>
-
           </ul>
-
         </nav>
-
-        <div id="mobile-body-overly"></div>
+        <div id="mobile-body-overlay"></div>
         <script>
-          $(document).ready(function () {
-            $("a").on('click', function (event) {
-              if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                  scrollTop: $(hash).offset().top
-                }, 800, function () {
-                  window.location.hash = hash;
-                });
-              }
-            });
+        const mobileNav = document.querySelector("#mobile-nav");
+        const mobileBodyOverlay = document.querySelector("#mobile-body-overlay");
+        function handleClick(event) {
+          event.preventDefault();
+          const link = event.target;
+          const hash = link.hash;
+          // Scroll to the section with the given hash
+          scrollToSection(hash);
+          // Update the URL hash after the animation finishes
+          setTimeout(() => {
+            window.location.hash = hash;
+          }, 800);
+        }
+        function scrollToSection(hash) {
+          const section = document.querySelector(hash);
+          const offsetTop = section.offsetTop;
+          // Use a smooth scrolling animation
+          // (gsap library is used here)
+          gsap.to(window, {
+            scrollTo: {
+              x: 0,
+              y: offsetTop,
+            },
+            duration: 800,
+            easing: "ease-in-out",
           });
-        </script>
-        <script>
-          $(document).ready(function () {
-            var stickyNavTop = $('#navbar').offset().top;
-            var stickyNav = function () {
-              var scrollTop = $(window).scrollTop();
-              if (scrollTop > stickyNavTop) {
-                $('#navbar').addClass('sticky');
-              } else {
-                $('#navbar').removeClass('sticky');
-              }
-            };
-            stickyNav();
-            $(window).scroll(function () {
-              stickyNav();
-            });
+        }
+        function init() {
+          // Add click event listener to all links in the navigation
+          mobileNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", handleClick);
           });
-        </script>
-        <script>
-          $(document).ready(function () {
-            $('#contact-popup').click(function () {
-              $('.contact-form').fadeIn();
-            });
-            $('.close-popup').click(function () {
-              $('.contact-form').fadeOut();
-            });
+          // Add overlay to hide the body while the navigation is open
+          mobileBodyOverlay.addEventListener("click", () => {
+            mobileNav.classList.remove("open");
           });
+          // Check the screen width and adjust the behavior accordingly
+          if (window.innerWidth > 768) {
+            mobileNav.classList.remove("sticky");
+          }
+        }
+        window.addEventListener("load", init);
         </script>
-  
 
 
 

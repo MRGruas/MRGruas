@@ -1,4 +1,453 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grúas Villalobos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="1001x1019" href="assets/img/logo_villalobos.png">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/jQueryUI/jquery-ui.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+
+<body id="body" onload='ajaxMarca()'>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top clean-navbar colorNav">
+        <div class="container">
+            <button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler">
+                <span class="visually-hidden">towlike</span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navcol-1" class="collapse navbar-collapse">
+                <a href="index.html">
+                    <img src="assets/img/logo_rentravi.png" class="logotipoEmpresa">
+                </a>
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a id="nav-Nosotros" href="index.html#nosotros" onclick="actualiza(this.id);"
+                            class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-Infraestructura" href="index.html#infraestructura" onclick="actualiza(this.id);"
+                            class="nav-link">Infraestructura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-Tecnologia" href="index.html#tecnologia" onclick="actualiza(this.id);"
+                            class="nav-link">Tecnología</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-Galeria" href="galeria.html" class="nav-link">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-Cotiza" href="cotiza.html" class="nav-link">Cotiza</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page landing-page">
+        <section id="contacto" class="clean-block" style="padding-bottom: 10px !important;">
+            <div class="container-fluid" style="margin: 0px !important; padding: 0px !important;">
+                <h4 class="fw-bold text-center py-5 tituloContacto">Cotiza</h4>
+            </div>
+            <div class="container">
+                <div class="row align-items-stretch">
+
+                    <div class="col-12 textoContacto" style="padding-bottom:25px;">
+                        A través de este formulario puedes cotizar tu servicio con nosotros.
+                    </div>
+
+                    <div class="col">
+                        <form id="formulario" name="formulario" action="gracias.html" method="post" autocomplete="on"
+                            novalidate class="needs-validation">
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nombre" class="form-label textoContacto">Nombre*</label>
+                                    <input id="nombre" type="text" name="nombre" required class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="telefono" class="form-label textoContacto">Teléfono*</label>
+                                    <input id="telefono" type="text" name="telefono" required class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="email" class="form-label textoContacto">Email*</label>
+                                    <input id="email" type="email" name="email"
+                                        pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+                                        required class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="tipoVehiculo" class="form-label textoContacto">Tipo de Vehículo*</label>
+                                    <select id="tipoVehiculo" name="tipoVehiculo" required class="form-select">
+                                        <option value="">Selecciona el tipo vehículo</option>
+                                        <option value="Motocicleta">Motocicleta</option>
+                                        <option value="Automóvil">Automóvil</option>
+                                        <option value="Pick Up o VAN">Pick Up o VAN</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="marcaVehiculo" class="form-label textoContacto">Marca del
+                                        vehículo*</label>
+                                    <select id="marcaVehiculo" name="marcaVehiculo" required onchange="marca();"
+                                        class="form-select">
+                                        <option value="">Seleccione la marca vehículo</option>
+                                    </select>
+                                    <input id="marcaV" type="hidden" name="marcaV" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="modeloVehiculo" class="form-label textoContacto">Modelo del vehículo
+                                        *</label>
+                                    <select id="modeloVehiculo" name="modeloVehiculo" required disabled
+                                        onchange="modelo();" class="form-select">
+                                        <option value="">Seleccione el modelo vehículo</option>
+                                    </select>
+                                    <input id="modeloV" type="hidden" name="modeloV" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="anoVehiculo" class="form-label textoContacto">Año del vehículo*</label>
+                                    <input id="anoVehiculo" type="text" name="anoVehiculo" required
+                                        class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="colorVehiculo" class="form-label textoContacto">Color del
+                                        vehículo*</label>
+                                    <input id="colorVehiculo" type="text" name="colorVehiculo" required
+                                        class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="placaVehiculo" class="form-label textoContacto">Placas del
+                                        vehículo*</label>
+                                    <input id="placaVehiculo" type="text" name="placaVehiculo" required
+                                        class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-check-label textoContacto">Se necesitan maniobras*</label>
+                                    <div class="col-12">
+                                        <div class="form-check form-check-inline">
+                                            <input id="maniobra1" type="radio" name="maniobra" value="SI" required
+                                                class="form-check-input"><label class="form-check-label"
+                                                for="maniobra1">
+                                                SI
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input id="maniobra2" type="radio" name="maniobra" value="NO" required
+                                                class="form-check-input"><label class="form-check-label"
+                                                for="maniobra2">
+                                                NO
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="descripcion" class="form-label textoContacto">Descripción*</label>
+                                    <textarea id="descripcion" name="descripcion" rows="2" required
+                                        class="form-control"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="tipoFalla" class="form-label textoContacto">Tipo de falla*</label>
+                                    <select id="tipoFalla" name="tipoFalla" required class="form-select">
+                                        <option value="">Seleccionar</option>
+                                        <option value="Mecánica">Mecánica</option>
+                                        <option value="Gasolina">Gasolina</option>
+                                        <option value="Corriente">Corriente</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="tipoTrasmision" class="form-label textoContacto">Tipo de
+                                        Trasmision*</label>
+                                    <select id="tipoTrasmision" name="tipoTrasmision" required class="form-select">
+                                        <option value="">Seleccionar</option>
+                                        <option value="Estandar">Estandar</option>
+                                        <option value="Automatica">Automatica</option>
+                                        <option value="Combinada">Combinada</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="destino" class="form-label textoContacto">Destino*</label>
+                                    <input id="destino" type="text" name="destino" required class="form-control">
+                                    <input id="latitudDestino" type="text" name="latitudDestino"
+                                        class="form-control invisible">
+                                    <input id="longitudDestino" type="text" name="longitudDestino"
+                                        class="form-control invisible">
+                                    <div id="mapDestino" class="invisible"></div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="origen" class="form-label textoContacto">Origen*</label>
+                                    <input id="origen" type="text" name="origen" required class="form-control">
+                                    <input id="latitudOrigen" type="text" name="latitudOrigen"
+                                        class="form-control invisible">
+                                    <input id="longitudOrigen" type="text" name="longitudOrigen"
+                                        class="form-control invisible">
+                                    <div id="mapOrigen" class="invisible"></div>
+                                </div>
+
+                                <div class="col-12 text-center p-5">
+                                    <button type="submit" class="btn btn-primary btnEnviar">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col text-end">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.3887032648217!2d-103.27448178507562!3d20.53127098626994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf8a65b9794b4e4d!2zMjDCsDMxJzUyLjYiTiAxMDPCsDE2JzIwLjMiVw!5e0!3m2!1ses!2smx!4v1639179826168!5m2!1ses!2smx"
+                            width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="dialog-message">
+        <p>El Correo se envio satisfactoriamente.</p>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <img src="assets/img/logo_villalobos.png" class="logoEmpresaBlanco"><br>
+                    <img src="assets/img/logo_rentravi.png" class="logoEmpresaBlanco">
+                </div>
+                <div class="row col-sm-4 textofooter">
+                    <p style="margin-bottom: 10px;">
+                        <a href="aviso.html" class="linkFooter">
+                            Aviso de privacidad
+                        </a>
+                    </p>
+                    <p>
+                        <a href="terminos.html" class="linkFooter">
+                            Términos y condiciones
+                        </a>
+                    </p>
+                    <p>
+                        <!--<a href="faq.html" class="linkFooter">-->
+                        FAQ
+                        <!--</a>-->
+                    </p>
+                    <div class="col-md-5 col-6 text-end">
+                        <!--<a href="#" target="_blank">-->
+                        <img src="assets/img/linkedin.png" class="iconoLikedin">
+                        <!--</a>-->
+                    </div>
+                    <div class="col-md-5 col-6 text-start">
+                        <!--<a href="#" target="_blank">-->
+                        <img src="assets/img/facebook.png" class="iconoFace">
+                        <!--</a>-->
+                    </div>
+                </div>
+
+                <div class="row col-sm-4 dividor">
+                    <div class="col-12 text-center">
+                        <img src="assets/img/towlike_blanco.png" class="logoTowLikeBlanco">
+                        <p class="text-center compatibilidad">
+                            ¡Descárgala Ya!
+                        </p>
+                    </div>
+                    <div class="col-6 sistemaGooglePlay">
+                        <a href="https://play.google.com/store/apps/details?id=mx.soft360.towlike&hl=es_MX"
+                            target="_blank">
+                            <img src="assets/img/google_play.png" class="sistemaOperativo">
+                        </a>
+                    </div>
+                    <div class="col-6 sistemaAppStore">
+                        <a href="https://apps.apple.com/mx/app/towlike/id1489746575" target="_blank">
+                            <img src="assets/img/app_store.png" class="sistemaOperativo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding-top: 10px;">
+            <div class="row">
+                <div class="col-12 p-2 copyright">
+                    © Copyright 2021 Grúasvillalobos - All Right Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/jQueryUI/jquery-ui.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/lib.js"></script>
+    <script src="assets/js/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOODCq3Cl0fgtIr1Pmgx-rX9uhiDTZV84&callback=initMap&libraries=places"
+        async defer></script>
+
+    <script>
+        function initMap() {
+            var mapDestino = new google.maps.Map(document.getElementById('mapDestino'), {
+                center: { lat: 20.531278, lng: -103.272306 },
+                zoom: 13,
+                mapTypeControl: false,
+            });
+
+            var destino = document.getElementById('destino');
+            mapDestino.controls[google.maps.ControlPosition.TOP_LEFT].push(destino);
+
+            var autocompleteDestino = new google.maps.places.Autocomplete(destino);
+            autocompleteDestino.bindTo('bounds', mapDestino);
+
+            var infowindowDestino = new google.maps.InfoWindow();
+
+            var markerDestino = new google.maps.Marker({
+                map: mapDestino,
+                anchorPoint: new google.maps.Point(0, -29)
+            });
+
+            autocompleteDestino.addListener('place_changed', function () {
+                infowindowDestino.close();
+                markerDestino.setVisible(false);
+
+                var place = autocompleteDestino.getPlace();
+
+                if (!place.geometry) {
+                    window.alert("El lugar devuelto por Autocompletar no contiene geometría.");
+                    return;
+                }
+
+                if (place.geometry.viewport) {
+                    mapDestino.fitBounds(place.geometry.viewport);
+                }
+                else {
+                    mapDestino.setCenter(place.geometry.location);
+                    mapDestino.setZoom(17);
+                }
+
+                markerDestino.setIcon(({
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(35, 35)
+                }));
+
+                markerDestino.setPosition(place.geometry.location);
+                markerDestino.setVisible(true);
+
+                var address = '';
+
+                if (place.address_components) {
+                    address = [
+                        (place.address_components[0] && place.address_components[0].short_name || ''),
+                        (place.address_components[1] && place.address_components[1].short_name || ''),
+                        (place.address_components[2] && place.address_components[2].short_name || '')
+                    ].join(' ');
+                }
+
+                infowindowDestino.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+                infowindowDestino.open(mapDestino, markerDestino);
+
+                document.getElementById('latitudDestino').value = place.geometry.location.lat();
+                document.getElementById('longitudDestino').value = place.geometry.location.lng();
+            });
+
+            var mapOrigen = new google.maps.Map(document.getElementById('mapOrigen'), {
+                center: { lat: 20.531278, lng: -103.272306 },
+                zoom: 13,
+                mapTypeControl: false,
+            });
+
+            var origen = document.getElementById('origen');
+            mapOrigen.controls[google.maps.ControlPosition.TOP_LEFT].push(origen);
+
+            var autocompleteOrigen = new google.maps.places.Autocomplete(origen);
+            autocompleteOrigen.bindTo('bounds', mapOrigen);
+
+            var infowindowOrigen = new google.maps.InfoWindow();
+
+            var markerOrigen = new google.maps.Marker({
+                map: mapOrigen,
+                anchorPoint: new google.maps.Point(0, -29)
+            });
+
+            autocompleteOrigen.addListener('place_changed', function () {
+                infowindowOrigen.close();
+                markerOrigen.setVisible(false);
+
+                var placeOrigen = autocompleteOrigen.getPlace();
+
+                if (!placeOrigen.geometry) {
+                    window.alert("El lugar devuelto por Autocompletar no contiene geometría.");
+                    return;
+                }
+
+                if (placeOrigen.geometry.viewport) {
+                    mapOrigen.fitBounds(placeOrigen.geometry.viewport);
+                }
+                else {
+                    mapOrigen.setCenter(placeOrigen.geometry.location);
+                    mapOrigen.setZoom(17);
+                }
+
+                markerDestino.setIcon(({
+                    url: placeOrigen.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(35, 35)
+                }));
+
+                markerOrigen.setPosition(placeOrigen.geometry.location);
+                markerOrigen.setVisible(true);
+
+                var addressOrigen = '';
+
+                if (placeOrigen.address_components) {
+                    addressOrigen = [
+                        (placeOrigen.address_components[0] && placeOrigen.address_components[0].short_name || ''),
+                        (placeOrigen.address_components[1] && placeOrigen.address_components[1].short_name || ''),
+                        (placeOrigen.address_components[2] && placeOrigen.address_components[2].short_name || '')
+                    ].join(' ');
+                }
+
+                infowindowOrigen.setContent('<div><strong>' + placeOrigen.name + '</strong><br>' + addressOrigen);
+                infowindowOrigen.open(mapOrigen, markerOrigen);
+
+                document.getElementById('latitudOrigen').value = placeOrigen.geometry.location.lat();
+                document.getElementById('longitudOrigen').value = placeOrigen.geometry.location.lng();
+            });
+        }
+    </script>
+</body>
+
+</html><!DOCTYPE html><html><head>
     <title>Cotización de Servicios de Grúa</title>
     <style>
         body {

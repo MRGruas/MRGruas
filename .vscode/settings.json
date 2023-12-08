@@ -1,7 +1,7 @@
 {
   "AutoPreview.center": true,
   "AutoPreview.packageManager": "",
-  "AutoPreview.serverURL": "",
+  "AutoPreview.serverURL": "http://127.0.0.1:3000/index.html",
   "[code-text-binary]": {},
   "[coffeescript]": {
     "diffEditor.ignoreTrimWhitespace": false
@@ -93,7 +93,7 @@
   "css.styleSheets": [],
   "csstree.enable": true,
   "debug.javascript.autoAttachFilter": "onlyWithFlag",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "editor.acceptSuggestionOnCommitCharacter": true,
   "editor.colorDecorators": true,
   "editor.linkedEditing": true,

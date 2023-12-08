@@ -20,7 +20,7 @@
   },
   "[git-commit]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
+      "source.fixAll": "explicit"
     },
     "editor.rulers": [72],
     "workbench.editor.restoreViewState": false
@@ -74,7 +74,7 @@
         "functoin": "function"
       }
     }
-  ],
+  ],"AutoPreview.background": "transparent","AutoPreview.locked":true,
   "autoprefixer.findExternalAutoprefixer": true,
   "autoprefixer.formatOnSave": false,
   "autoprefixer.ignoreFiles": [],
@@ -133,7 +133,7 @@
   "stylelint.reportInvalidScopeDisables": false,
   "stylelint.snippet": ["css", "less", "postcss"],
   "stylelint.stylelintPath": "",
-  "window.zoomLevel": -2,
+  "window.zoomLevel": -1,
   "workbench.settings.editor": "json",
   "fixJson.indentationSpaces": null,
   "[http]": {

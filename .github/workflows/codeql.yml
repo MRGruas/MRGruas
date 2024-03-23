@@ -5,42 +5,18 @@ on:
     branches: [ "ghanmx-patch-1" ]
   pull_request:
     branches: [ "ghanmx-patch-1" ]
-  schedule:
-    - cron: '18 9 * * 3'
 
 jobs:
-  analyze:
-    name: Analyze
-    runs-on: ${{ matrix.runner }}
-
-    timeout-minutes: ${{ matrix.timeout }}
-
-    permissions:
-      security-events: write
-      actions: read
-      contents: read
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'javascript-typescript' ]
-        runner: ${{ matrix.language == 'Swift' && 'macos-latest' || 'ubuntu-latest' }}
-        timeout: ${{ matrix.language == 'Swift' && 120 || 360 }}
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout
       uses: actions/checkout@v4
-
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
+      uses: ./init
       with:
-        languages: ${{ matrix.language }}
-        # queries: security-extended,security-and-quality
-
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
-
+        languages: javascript
+        config-file: ./.github/codeql/codeql-config.yml
     - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
-      with:
-        category: "/language:${{ matrix.language }}"
+      uses: ./analyze

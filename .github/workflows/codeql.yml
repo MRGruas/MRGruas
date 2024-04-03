@@ -8,7 +8,6 @@
 # We have attempted to detect the languages in your repository. Please check
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
-#
 name: "CodeQL"
 on:
   push:
@@ -62,6 +61,3 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
-
-- name: HTML5 Validator
-  uses: Cyb3r-Jak3/html5validator-action@v7.2.0

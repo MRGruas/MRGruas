@@ -55,7 +55,6 @@
   "[scss]": {
     "editor.suggest.insertMode": "replace"
   },
-  "audioCues.diffLineDeleted": "on",
   "auto-correct.dictionary": [
     {
       "languages": ["*"],
@@ -79,7 +78,7 @@
   "autoprefixer.formatOnSave": false,
   "autoprefixer.ignoreFiles": [],
   "autoprefixer.options": {},
-  "codeQL.variantAnalysis.controllerRepo": "https://github.com/MRGruas/MRGruas.github.io",
+  "codeQL.variantAnalysis.controllerRepo": "MRGruas/MRGruas.github.io",
   "css.completion.completePropertyWithSemicolon": true,
   "css.completion.triggerPropertyValueCompletion": true,
   "css.customData": [],
@@ -142,5 +141,5 @@
         "comments": false,
         "strings": true
     }
-  }
+  }, "openInDefaultBrowser.run.openWithLocalHttpServer": true,"testExplorer.onStart": null, "explorer.autoReveal": true, "simpleBrowser.focusLockIndicator.enabled": true
 }

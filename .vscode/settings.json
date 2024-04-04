@@ -55,7 +55,6 @@
   "[scss]": {
     "editor.suggest.insertMode": "replace"
   },
-  "audioCues.diffLineDeleted": "on",
   "auto-correct.dictionary": [
     {
       "languages": ["*"],
@@ -142,5 +141,9 @@
         "comments": false,
         "strings": true
     }
-  }
+  },
+  "accessibility.signals.diffLineDeleted": {
+    "sound": "on"
+  },
+  "codeQL.createQuery.qlPackLocation": "c:\\Users\\israe\\MRGruas\\MRGruas.github.io"
 }

@@ -78,7 +78,7 @@
   "autoprefixer.formatOnSave": false,
   "autoprefixer.ignoreFiles": [],
   "autoprefixer.options": {},
-  "codeQL.variantAnalysis.controllerRepo": "https://github.com/MRGruas/MRGruas.github.io",
+  "codeQL.variantAnalysis.controllerRepo": "MRGruas/MRGruas.github.io",
   "css.completion.completePropertyWithSemicolon": true,
   "css.completion.triggerPropertyValueCompletion": true,
   "css.customData": [],
@@ -106,7 +106,7 @@
   "html.autoCreateQuotes": true,
   "html.format.enable": true,
   "json.format.enable": true,
-  "livePreview.autoRefreshPreview": "true",
+  "livePreview.autoRefreshPreview": "Never",
   "livePreview.notifyOnOpenLooseFile": true,
   "livePreview.openPreviewTarget": "External Browser",
   "npm-intellisense.importQuotes": "'",
@@ -141,9 +141,5 @@
         "comments": false,
         "strings": true
     }
-  },
-  "accessibility.signals.diffLineDeleted": {
-    "sound": "on"
-  },
-  "codeQL.createQuery.qlPackLocation": "c:\\Users\\israe\\MRGruas\\MRGruas.github.io"
+  }, "openInDefaultBrowser.run.openWithLocalHttpServer": true,"testExplorer.onStart": null, "explorer.autoReveal": true, "simpleBrowser.focusLockIndicator.enabled": true
 }

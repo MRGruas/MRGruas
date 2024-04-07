@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: "CodeQL and SARIF Upload"
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze with CodeQL
     runs-on: ubuntu-latest
 
     steps:
@@ -17,27 +17,20 @@ jobs:
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
-      uses: github/vv/init@v3
+      uses: github/codeql-action/init@v3
       with:
         languages: javascript-typescript
 
-    # If the analyze step fails for one of the languages you are analyzing with
-    # "We were unable to automatically build your code", modify the matrix above
-    # to set the build mode to "manual" for that language. Then modify this step
-    # to build your code.
-    # ℹ️ Command-line programs to run using the OS shell.
-    #  See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
-    - if: matrix.build-mode == 'manual'
-      run: |
-        echo 'If you are using a "manual" build mode for one or more of the' \
-         'languages you are analyzing, replace this with the commands to build' \
-         'your code, for example:'
-        echo ' make bootstrap'
-        echo ' make release'
-        exit 1
-
+    # Analyze code using CodeQL
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
       with:
-        category: "/language:javascript-typescript"
+        category: "/language:javascript-typescript"  # Optional category
+
+    # (Optional) If you have additional SARIF files generated outside CodeQL:
+    - uses: github/codeql-action/upload-sarif@v3
+      if: ${{ success() && env.SARIF_FILES }}  # Only upload if analysis succeeds and SARIF_FILES is set
+      with:
+        sarif_file: ${{ env.SARIF_FILES }}  # Path to your SARIF file(s) relative to the repository root
+        category: "my-external-analysis"  # Optional category for external SARIF results
 

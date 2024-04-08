@@ -1,0 +1,36 @@
+name: "CodeQL and SARIF Upload"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  analyze:
+    name: Analyze with CodeQL
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v3
+      with:
+        languages: javascript-typescript
+
+    # Analyze code using CodeQL
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v3
+      with:
+        category: "/language:javascript-typescript"  # Optional category
+
+    # (Optional) If you have additional SARIF files generated outside CodeQL:
+    - uses: github/codeql-action/upload-sarif@v3
+      if: ${{ success() && env.SARIF_FILES }}  # Only upload if analysis succeeds and SARIF_FILES is set
+      with:
+        sarif_file: ${{ env.SARIF_FILES }}  # Path to your SARIF file(s) relative to the repository root
+        category: "my-external-analysis"  # Optional category for external SARIF results
+

@@ -1,0 +1,6 @@
+# Supabase project configuration
+project_id = "fhisqbevtkjdcokqeoqa"
+
+# Functions configuration
+[functions.notify-request]
+  verify_jwt = true

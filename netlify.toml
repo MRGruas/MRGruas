@@ -1,0 +1,58 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+  # Increase build timeout to 60 minutes (in minutes)
+  timeout = 60
+
+[dev]
+  command = "npm run dev"
+  port = 3000
+  targetPort = 5173
+  publish = "dist"
+  autoLaunch = true
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  NODE_VERSION = "20.11.1"
+  NPM_VERSION = "10.2.4"
+  # Add Python version for node-gyp
+  PYTHON_VERSION = "3.11"
+  # Add CI environment variable to optimize build
+  CI = "true"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https://*.supabase.co https://*.netlify.app https://api.openstreetmap.org; frame-src 'self' https://*.stripe.com;"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(self)"
+
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+
+# Add build optimization settings
+[build.optimization]
+  bundle = true
+  minify = true
+  compress = true

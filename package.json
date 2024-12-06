@@ -12,7 +12,8 @@
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "analyze": "vite build --mode analyze",
-    "install": "npm install --legacy-peer-deps"
+    "install": "npm install --legacy-peer-deps",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@eslint/plugin-kit": "^0.2.3",

@@ -18,15 +18,14 @@ export default defineConfig({
     port: 8080,
   },
   build: {
-    sourcemap: true,
+    outDir: 'docs',
+    assetsInlineLimit: 0, // Ensures files aren't incorrectly inlined
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-        },
+        entryFileNames: `[name].js`,
       },
     },
-    // Add optimizeDeps configuration
+    sourcemap: true,
     commonjsOptions: {
       include: [/node_modules/],
       extensions: ['.js', '.cjs'],
